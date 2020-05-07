@@ -1,0 +1,3441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Drugs</title>
+</head>
+<body>
+
+
+<!-- Load require.js. Delete this if your page already loads require.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js" crossorigin="anonymous"></script>
+
+<script type="application/vnd.jupyter.widget-state+json">
+{
+  "version_major": 2,
+  "version_minor": 0,
+  "state": {
+    "6b3fdb3cf2584bcc9d53efd873af76d9": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "de00186a9394483f98d390c05dc0d951": {
+      "model_name": "ColormakerRegistryModel",
+      "model_module": "nglview-js-widgets",
+      "model_module_version": "2.7.5",
+      "state": {
+        "_dom_classes": [],
+        "_msg_ar": [],
+        "_msg_q": [],
+        "_ready": true,
+        "layout": "IPY_MODEL_6b3fdb3cf2584bcc9d53efd873af76d9"
+      }
+    },
+    "caadd527aa6c4fa6b5ade03feb0a9da4": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "6ad976484b3e45309574fd641142d059": {
+      "model_name": "NGLModel",
+      "model_module": "nglview-js-widgets",
+      "model_module_version": "2.7.5",
+      "state": {
+        "_camera_orientation": [
+          30.581451945175484,
+          0,
+          0,
+          0,
+          0,
+          30.581451945175484,
+          0,
+          0,
+          0,
+          0,
+          30.581451945175484,
+          0,
+          -0.3889501094818115,
+          -0.5037499666213989,
+          -0.28530001640319824,
+          1
+        ],
+        "_dom_classes": [],
+        "_ibtn_fullscreen": "IPY_MODEL_e2f5246d54294414abea749214f56a2b",
+        "_igui": null,
+        "_iplayer": "IPY_MODEL_5f0c21d42db442e78b5fc9119dfa564d",
+        "_ngl_color_dict": {},
+        "_ngl_coordinate_resource": {},
+        "_ngl_full_stage_parameters": {
+          "impostor": true,
+          "quality": "medium",
+          "workerDefault": true,
+          "sampleLevel": 0,
+          "backgroundColor": "white",
+          "rotateSpeed": 2,
+          "zoomSpeed": 1.2,
+          "panSpeed": 1,
+          "clipNear": 0,
+          "clipFar": 100,
+          "clipDist": 10,
+          "fogNear": 50,
+          "fogFar": 100,
+          "cameraFov": 40,
+          "cameraEyeSep": 0.3,
+          "cameraType": "perspective",
+          "lightColor": 14540253,
+          "lightIntensity": 1,
+          "ambientColor": 14540253,
+          "ambientIntensity": 0.2,
+          "hoverTimeout": 0,
+          "tooltip": true,
+          "mousePreset": "default"
+        },
+        "_ngl_msg_archive": [
+          {
+            "target": "Stage",
+            "type": "call_method",
+            "methodName": "loadFile",
+            "reconstruc_color_scheme": false,
+            "args": [
+              {
+                "type": "blob",
+                "data": "135398748\n  -OEChem-04272000393D\n\n 33 34  0     0  0  0  0  0  0999 V2000\n    3.7061    2.2794    0.1062 O   0  0  0  0  0  0  0  0  0  0  0  0\n    4.1251   -1.8131   -1.0481 O   0  0  0  0  0  0  0  0  0  0  0  0\n   -3.8995   -1.5398   -1.0158 O   0  0  0  0  0  0  0  0  0  0  0  0\n    0.0482   -0.6276    0.9839 N   0  0  0  0  0  0  0  0  0  0  0  0\n   -1.2882   -2.2461    0.2116 N   0  0  0  0  0  0  0  0  0  0  0  0\n   -1.2831    1.3286    0.4738 N   0  0  0  0  0  0  0  0  0  0  0  0\n   -3.3366    0.6841   -0.5789 N   0  0  0  0  0  0  0  0  0  0  0  0\n   -2.8517    2.9525   -0.1762 N   0  0  0  0  0  0  0  0  0  0  0  0\n    2.7646    0.1182   -0.4988 C   0  0  0  0  0  0  0  0  0  0  0  0\n    2.5870   -0.3581    0.9640 C   0  0  0  0  0  0  0  0  0  0  0  0\n    1.2518    0.0209    1.6210 C   0  0  0  0  0  0  0  0  0  0  0  0\n    4.1053   -0.3912   -1.0558 C   0  0  0  0  0  0  0  0  0  0  0  0\n    2.6835    1.6439   -0.6479 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -1.0582   -0.0039    0.4871 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -1.8563   -1.0210    0.0222 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -0.1370   -1.9755    0.7952 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -3.1234   -0.7016   -0.5751 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -2.4376    1.6502   -0.0683 C   0  0  0  0  0  0  0  0  0  0  0  0\n    1.9614   -0.3301   -1.0976 H   0  0  0  0  0  0  0  0  0  0  0  0\n    3.3956    0.0573    1.5788 H   0  0  0  0  0  0  0  0  0  0  0  0\n    2.7029   -1.4476    1.0094 H   0  0  0  0  0  0  0  0  0  0  0  0\n    1.0763    1.0998    1.6216 H   0  0  0  0  0  0  0  0  0  0  0  0\n    1.2268   -0.3282    2.6600 H   0  0  0  0  0  0  0  0  0  0  0  0\n    4.2435   -0.0567   -2.0894 H   0  0  0  0  0  0  0  0  0  0  0  0\n    4.9488   -0.0329   -0.4562 H   0  0  0  0  0  0  0  0  0  0  0  0\n    1.7140    2.0273   -0.3179 H   0  0  0  0  0  0  0  0  0  0  0  0\n    2.8102    1.9266   -1.6988 H   0  0  0  0  0  0  0  0  0  0  0  0\n    0.5945   -2.7086    1.1062 H   0  0  0  0  0  0  0  0  0  0  0  0\n    4.9847   -2.0883   -1.4098 H   0  0  0  0  0  0  0  0  0  0  0  0\n    3.6097    3.2370   -0.0320 H   0  0  0  0  0  0  0  0  0  0  0  0\n   -4.2068    1.0210   -0.9806 H   0  0  0  0  0  0  0  0  0  0  0  0\n   -2.2759    3.7161    0.1612 H   0  0  0  0  0  0  0  0  0  0  0  0\n   -3.7437    3.1909   -0.5957 H   0  0  0  0  0  0  0  0  0  0  0  0\n  1 13  1  0  0  0  0\n  1 30  1  0  0  0  0\n  2 12  1  0  0  0  0\n  2 29  1  0  0  0  0\n  3 17  2  0  0  0  0\n  4 11  1  0  0  0  0\n  4 14  1  0  0  0  0\n  4 16  1  0  0  0  0\n  5 15  1  0  0  0  0\n  5 16  2  0  0  0  0\n  6 14  1  0  0  0  0\n  6 18  2  0  0  0  0\n  7 17  1  0  0  0  0\n  7 18  1  0  0  0  0\n  7 31  1  0  0  0  0\n  8 18  1  0  0  0  0\n  8 32  1  0  0  0  0\n  8 33  1  0  0  0  0\n  9 10  1  0  0  0  0\n  9 12  1  0  0  0  0\n  9 13  1  0  0  0  0\n  9 19  1  0  0  0  0\n 10 11  1  0  0  0  0\n 10 20  1  0  0  0  0\n 10 21  1  0  0  0  0\n 11 22  1  0  0  0  0\n 11 23  1  0  0  0  0\n 12 24  1  0  0  0  0\n 12 25  1  0  0  0  0\n 13 26  1  0  0  0  0\n 13 27  1  0  0  0  0\n 14 15  2  0  0  0  0\n 15 17  1  0  0  0  0\n 16 28  1  0  0  0  0\nM  END\n> <PUBCHEM_COMPOUND_CID>\n135398748\n\n> <PUBCHEM_CONFORMER_RMSD>\n0.6\n\n> <PUBCHEM_CONFORMER_DIVERSEORDER>\n1\n58\n112\n113\n26\n89\n92\n22\n99\n18\n104\n31\n52\n72\n80\n108\n9\n101\n114\n76\n67\n103\n107\n10\n86\n94\n91\n110\n75\n70\n98\n68\n34\n57\n82\n93\n46\n15\n88\n96\n27\n81\n16\n105\n25\n64\n53\n85\n71\n43\n102\n11\n79\n106\n37\n33\n87\n40\n48\n111\n51\n30\n69\n95\n39\n77\n49\n8\n14\n41\n65\n6\n3\n50\n61\n59\n44\n38\n29\n54\n45\n17\n32\n60\n100\n97\n13\n56\n55\n84\n20\n24\n5\n63\n19\n66\n35\n23\n7\n62\n74\n2\n4\n36\n73\n12\n21\n42\n83\n47\n90\n28\n78\n109\n\n> <PUBCHEM_MMFF94_PARTIAL_CHARGES>\n22\n1 -0.68\n11 0.26\n12 0.28\n13 0.28\n14 -0.03\n15 0.14\n16 0.04\n17 0.72\n18 0.56\n2 -0.68\n28 0.15\n29 0.4\n3 -0.57\n30 0.4\n31 0.37\n32 0.4\n33 0.4\n4 0.05\n5 -0.57\n6 -0.58\n7 -0.49\n8 -0.85\n\n> <PUBCHEM_EFFECTIVE_ROTOR_COUNT>\n5\n\n> <PUBCHEM_PHARMACOPHORE_FEATURES>\n10\n1 1 acceptor\n1 1 donor\n1 2 acceptor\n1 2 donor\n1 3 acceptor\n1 7 donor\n1 8 donor\n3 4 5 16 cation\n5 4 5 14 15 16 rings\n6 6 7 14 15 17 18 rings\n\n> <PUBCHEM_HEAVY_ATOM_COUNT>\n18\n\n> <PUBCHEM_ATOM_DEF_STEREO_COUNT>\n0\n\n> <PUBCHEM_ATOM_UDEF_STEREO_COUNT>\n0\n\n> <PUBCHEM_BOND_DEF_STEREO_COUNT>\n0\n\n> <PUBCHEM_BOND_UDEF_STEREO_COUNT>\n0\n\n> <PUBCHEM_ISOTOPIC_ATOM_COUNT>\n0\n\n> <PUBCHEM_COMPONENT_COUNT>\n1\n\n> <PUBCHEM_CACTVS_TAUTO_COUNT>\n-1\n\n> <PUBCHEM_CONFORMER_ID>\n0812055C00000001\n\n> <PUBCHEM_MMFF94_ENERGY>\n33.2986\n\n> <PUBCHEM_FEATURE_SELFOVERLAP>\n50.925\n\n> <PUBCHEM_SHAPE_FINGERPRINT>\n10498660 4 18334001796744765861\n12173636 292 18335416889504851215\n12202030 40 15409740718824740063\n12491281 212 18113623352215083593\n14250199 8 18261965153578348380\n15775835 57 17749393624498008028\n16945 1 18337656603618435619\n17134986 127 18191863418653378165\n1813 80 13830133909853355344\n18186145 218 18260544524077365052\n20361792 2 15051740793598558432\n20671657 1 18047181956250420195\n21524375 3 17968095257374785539\n21864079 5 18260546697320676537\n22802520 49 18270124633457163746\n23557571 272 17972602366338830306\n23559900 14 18343863321256400440\n2637199 183 18042698212399335760\n2748010 2 17762036032891321675\n4028521 119 18186799227030419356\n5262128 65 18271824435747997348\n74978 22 18334862718802296866\n7832392 63 18261676982737229412\n93112 12 18410863165832390326\n9709674 26 18339929315537973750\n9981440 41 17391914039493618784\n\n> <PUBCHEM_SHAPE_MULTIPOLES>\n327.92\n7.49\n2.54\n1.16\n3.33\n0.97\n0.16\n0.77\n-3.27\n-0.87\n-0.15\n0.59\n-0.27\n0.03\n\n> <PUBCHEM_SHAPE_SELFOVERLAP>\n686.289\n\n> <PUBCHEM_SHAPE_VOLUME>\n185\n\n> <PUBCHEM_COORDINATE_TYPE>\n2\n5\n10\n\n$$$$\n",
+                "binary": false
+              }
+            ],
+            "kwargs": {
+              "defaultRepresentation": true,
+              "ext": "sdf"
+            }
+          },
+          {
+            "target": "Widget",
+            "type": "call_method",
+            "methodName": "setSize",
+            "reconstruc_color_scheme": false,
+            "args": [
+              "300px",
+              "300px"
+            ],
+            "kwargs": {}
+          }
+        ],
+        "_ngl_original_stage_parameters": {
+          "impostor": true,
+          "quality": "medium",
+          "workerDefault": true,
+          "sampleLevel": 0,
+          "backgroundColor": "white",
+          "rotateSpeed": 2,
+          "zoomSpeed": 1.2,
+          "panSpeed": 1,
+          "clipNear": 0,
+          "clipFar": 100,
+          "clipDist": 10,
+          "fogNear": 50,
+          "fogFar": 100,
+          "cameraFov": 40,
+          "cameraEyeSep": 0.3,
+          "cameraType": "perspective",
+          "lightColor": 14540253,
+          "lightIntensity": 1,
+          "ambientColor": 14540253,
+          "ambientIntensity": 0.2,
+          "hoverTimeout": 0,
+          "tooltip": true,
+          "mousePreset": "default"
+        },
+        "_ngl_repr_dict": {
+          "0": {
+            "0": {
+              "type": "ball+stick",
+              "params": {
+                "lazy": false,
+                "visible": true,
+                "quality": "high",
+                "sphereDetail": 2,
+                "radialSegments": 20,
+                "openEnded": true,
+                "disableImpostor": false,
+                "aspectRatio": 1.5,
+                "lineOnly": false,
+                "cylinderOnly": false,
+                "multipleBond": "off",
+                "bondScale": 0.3,
+                "bondSpacing": 0.75,
+                "linewidth": 2,
+                "radiusType": "size",
+                "radiusData": {},
+                "radiusSize": 0.15,
+                "radiusScale": 2,
+                "assembly": "default",
+                "defaultAssembly": "",
+                "clipNear": 0,
+                "clipRadius": 0,
+                "clipCenter": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "flatShaded": false,
+                "opacity": 1,
+                "depthWrite": true,
+                "side": "double",
+                "wireframe": false,
+                "colorScheme": "element",
+                "colorScale": "",
+                "colorReverse": false,
+                "colorValue": 9474192,
+                "colorMode": "hcl",
+                "roughness": 0.4,
+                "metalness": 0,
+                "diffuse": 16777215,
+                "diffuseInterior": false,
+                "useInteriorColor": true,
+                "interiorColor": 2236962,
+                "interiorDarkening": 0,
+                "matrix": {
+                  "elements": [
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                "disablePicking": false,
+                "sele": ""
+              }
+            }
+          }
+        },
+        "_ngl_version": "2.0.0-dev.36",
+        "_ngl_view_id": [
+          "8F6434B6-3F6A-41D5-A60E-F725BDBC3B10"
+        ],
+        "_player_dict": {},
+        "_scene_position": {},
+        "_scene_rotation": {},
+        "_synced_model_ids": [],
+        "_synced_repr_model_ids": [],
+        "layout": "IPY_MODEL_caadd527aa6c4fa6b5ade03feb0a9da4",
+        "n_components": 1,
+        "picked": {}
+      }
+    },
+    "0b1f84357c4a4e1da9c6431b8cc9cd98": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "2b6b1dcaf69d4208baecbaf7499c0ef1": {
+      "model_name": "ImageModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_0b1f84357c4a4e1da9c6431b8cc9cd98",
+        "width": "900.0"
+      }
+    },
+    "31a23e6f06a44e9c9b33d3f779e7b481": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "bc65df48f6a4429aa5a69c60cff5cc51": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "794cd2b741a34697b62ff623319783ec": {
+      "model_name": "PlayModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_31a23e6f06a44e9c9b33d3f779e7b481",
+        "max": 0,
+        "style": "IPY_MODEL_bc65df48f6a4429aa5a69c60cff5cc51"
+      }
+    },
+    "140458286b744cf6b0c917af58e7cd92": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "96da080386f645b1bb6cccf4f1458ac4": {
+      "model_name": "SliderStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "1ce7a0bd13cb45b39a8727fe22f53141": {
+      "model_name": "IntSliderModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_140458286b744cf6b0c917af58e7cd92",
+        "max": 0,
+        "style": "IPY_MODEL_96da080386f645b1bb6cccf4f1458ac4"
+      }
+    },
+    "39ff27e4a0b6402e814891eaec49815d": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "5f0c21d42db442e78b5fc9119dfa564d": {
+      "model_name": "HBoxModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "children": [
+          "IPY_MODEL_794cd2b741a34697b62ff623319783ec",
+          "IPY_MODEL_1ce7a0bd13cb45b39a8727fe22f53141"
+        ],
+        "layout": "IPY_MODEL_39ff27e4a0b6402e814891eaec49815d"
+      }
+    },
+    "8f8e4ea6acac401fadced92d0c1e0845": {
+      "model_name": "LinkModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "source": [
+          "IPY_MODEL_794cd2b741a34697b62ff623319783ec",
+          "value"
+        ],
+        "target": [
+          "IPY_MODEL_1ce7a0bd13cb45b39a8727fe22f53141",
+          "value"
+        ]
+      }
+    },
+    "d2c88b5b90894f389c212c7a3880e26c": {
+      "model_name": "LinkModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "source": [
+          "IPY_MODEL_794cd2b741a34697b62ff623319783ec",
+          "value"
+        ],
+        "target": [
+          "IPY_MODEL_6ad976484b3e45309574fd641142d059",
+          "frame"
+        ]
+      }
+    },
+    "63dc1e18e06c4b79957a6468a62abd5f": {
+      "model_name": "LinkModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "source": [
+          "IPY_MODEL_794cd2b741a34697b62ff623319783ec",
+          "max"
+        ],
+        "target": [
+          "IPY_MODEL_6ad976484b3e45309574fd641142d059",
+          "max_frame"
+        ]
+      }
+    },
+    "339cf4388836420f80c66c897ea1d601": {
+      "model_name": "LinkModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "source": [
+          "IPY_MODEL_1ce7a0bd13cb45b39a8727fe22f53141",
+          "max"
+        ],
+        "target": [
+          "IPY_MODEL_6ad976484b3e45309574fd641142d059",
+          "max_frame"
+        ]
+      }
+    },
+    "9cd934713cc945ffab5b7a1dd49a6317": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {
+        "width": "34px"
+      }
+    },
+    "b7ff11155619423f9b0bb213a0baed8c": {
+      "model_name": "ButtonStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "e2f5246d54294414abea749214f56a2b": {
+      "model_name": "ButtonModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "icon": "compress",
+        "layout": "IPY_MODEL_9cd934713cc945ffab5b7a1dd49a6317",
+        "style": "IPY_MODEL_b7ff11155619423f9b0bb213a0baed8c"
+      }
+    },
+    "edccac721a2c4b51b7c0ec3d656d83b6": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "ac46912bfb804c3ab4cf00e41f03bba2": {
+      "model_name": "NGLModel",
+      "model_module": "nglview-js-widgets",
+      "model_module_version": "2.7.5",
+      "state": {
+        "_camera_orientation": [
+          27.506617808697577,
+          0,
+          0,
+          0,
+          0,
+          27.506617808697577,
+          0,
+          0,
+          0,
+          0,
+          27.506617808697577,
+          0,
+          0.31960010528564453,
+          0.5161999464035034,
+          -0.2556999921798706,
+          1
+        ],
+        "_dom_classes": [],
+        "_ibtn_fullscreen": "IPY_MODEL_12f332d5a12e4b01b61a5c6c4c764ef6",
+        "_igui": null,
+        "_iplayer": "IPY_MODEL_a2ef01c3d73445ec927fb0938583d25d",
+        "_ngl_color_dict": {},
+        "_ngl_coordinate_resource": {},
+        "_ngl_full_stage_parameters": {
+          "impostor": true,
+          "quality": "medium",
+          "workerDefault": true,
+          "sampleLevel": 0,
+          "backgroundColor": "white",
+          "rotateSpeed": 2,
+          "zoomSpeed": 1.2,
+          "panSpeed": 1,
+          "clipNear": 0,
+          "clipFar": 100,
+          "clipDist": 10,
+          "fogNear": 50,
+          "fogFar": 100,
+          "cameraFov": 40,
+          "cameraEyeSep": 0.3,
+          "cameraType": "perspective",
+          "lightColor": 14540253,
+          "lightIntensity": 1,
+          "ambientColor": 14540253,
+          "ambientIntensity": 0.2,
+          "hoverTimeout": 0,
+          "tooltip": true,
+          "mousePreset": "default"
+        },
+        "_ngl_msg_archive": [
+          {
+            "target": "Stage",
+            "type": "call_method",
+            "methodName": "loadFile",
+            "reconstruc_color_scheme": false,
+            "args": [
+              {
+                "type": "blob",
+                "data": "3117\n  -OEChem-04272000413D\n\n 36 35  0     0  0  0  0  0  0999 V2000\n    0.4366    1.2142    1.2884 S   0  0  0  0  0  0  0  0  0  0  0  0\n   -0.8853    1.8943   -0.1414 S   0  0  0  0  0  0  0  0  0  0  0  0\n    2.5634    2.5308   -0.3252 S   0  0  0  0  0  0  0  0  0  0  0  0\n   -0.6488   -0.3234   -2.1124 S   0  0  0  0  0  0  0  0  0  0  0  0\n    2.5434   -0.1632    0.2701 N   0  0  0  0  0  0  0  0  0  0  0  0\n   -2.6357   -0.1810   -0.2029 N   0  0  0  0  0  0  0  0  0  0  0  0\n    3.8015   -0.4383   -0.4310 C   0  0  0  0  0  0  0  0  0  0  0  0\n    1.9367   -1.3544    0.8696 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -3.2272   -1.4485   -0.6386 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -3.3346    0.4304    0.9316 C   0  0  0  0  0  0  0  0  0  0  0  0\n    3.5581   -0.8371   -1.8718 C   0  0  0  0  0  0  0  0  0  0  0  0\n    2.4356   -1.5801    2.2819 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -2.6009   -2.6279    0.0763 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -4.3965    1.4063    0.4685 C   0  0  0  0  0  0  0  0  0  0  0  0\n    1.9458    1.1106    0.3557 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -1.4921    0.3674   -0.8187 C   0  0  0  0  0  0  0  0  0  0  0  0\n    4.4470    0.4443   -0.4029 H   0  0  0  0  0  0  0  0  0  0  0  0\n    4.3435   -1.2319    0.0958 H   0  0  0  0  0  0  0  0  0  0  0  0\n    0.8456   -1.3027    0.8617 H   0  0  0  0  0  0  0  0  0  0  0  0\n    2.1855   -2.2267    0.2535 H   0  0  0  0  0  0  0  0  0  0  0  0\n   -4.3077   -1.4253   -0.4547 H   0  0  0  0  0  0  0  0  0  0  0  0\n   -3.1093   -1.5701   -1.7194 H   0  0  0  0  0  0  0  0  0  0  0  0\n   -3.7966   -0.3597    1.5356 H   0  0  0  0  0  0  0  0  0  0  0  0\n   -2.6350    0.9357    1.6006 H   0  0  0  0  0  0  0  0  0  0  0  0\n    2.9492   -1.7441   -1.9400 H   0  0  0  0  0  0  0  0  0  0  0  0\n    3.0384   -0.0477   -2.4236 H   0  0  0  0  0  0  0  0  0  0  0  0\n    4.5095   -1.0318   -2.3766 H   0  0  0  0  0  0  0  0  0  0  0  0\n    3.5209   -1.7229    2.3031 H   0  0  0  0  0  0  0  0  0  0  0  0\n    2.2034   -0.7335    2.9350 H   0  0  0  0  0  0  0  0  0  0  0  0\n    1.9710   -2.4744    2.7090 H   0  0  0  0  0  0  0  0  0  0  0  0\n   -1.5235   -2.6888   -0.1046 H   0  0  0  0  0  0  0  0  0  0  0  0\n   -2.7480   -2.5581    1.1591 H   0  0  0  0  0  0  0  0  0  0  0  0\n   -3.0549   -3.5632   -0.2658 H   0  0  0  0  0  0  0  0  0  0  0  0\n   -3.9699    2.2202   -0.1254 H   0  0  0  0  0  0  0  0  0  0  0  0\n   -5.1487    0.9069   -0.1510 H   0  0  0  0  0  0  0  0  0  0  0  0\n   -4.9078    1.8475    1.3298 H   0  0  0  0  0  0  0  0  0  0  0  0\n  1  2  1  0  0  0  0\n  1 15  1  0  0  0  0\n  2 16  1  0  0  0  0\n  3 15  2  0  0  0  0\n  4 16  2  0  0  0  0\n  5  7  1  0  0  0  0\n  5  8  1  0  0  0  0\n  5 15  1  0  0  0  0\n  6  9  1  0  0  0  0\n  6 10  1  0  0  0  0\n  6 16  1  0  0  0  0\n  7 11  1  0  0  0  0\n  7 17  1  0  0  0  0\n  7 18  1  0  0  0  0\n  8 12  1  0  0  0  0\n  8 19  1  0  0  0  0\n  8 20  1  0  0  0  0\n  9 13  1  0  0  0  0\n  9 21  1  0  0  0  0\n  9 22  1  0  0  0  0\n 10 14  1  0  0  0  0\n 10 23  1  0  0  0  0\n 10 24  1  0  0  0  0\n 11 25  1  0  0  0  0\n 11 26  1  0  0  0  0\n 11 27  1  0  0  0  0\n 12 28  1  0  0  0  0\n 12 29  1  0  0  0  0\n 12 30  1  0  0  0  0\n 13 31  1  0  0  0  0\n 13 32  1  0  0  0  0\n 13 33  1  0  0  0  0\n 14 34  1  0  0  0  0\n 14 35  1  0  0  0  0\n 14 36  1  0  0  0  0\nM  END\n> <PUBCHEM_COMPOUND_CID>\n3117\n\n> <PUBCHEM_CONFORMER_RMSD>\n0.8\n\n> <PUBCHEM_CONFORMER_DIVERSEORDER>\n1\n182\n46\n170\n164\n38\n95\n112\n56\n33\n127\n18\n16\n35\n61\n40\n19\n185\n6\n138\n51\n47\n34\n125\n111\n159\n2\n171\n80\n99\n142\n167\n67\n135\n173\n162\n116\n63\n82\n49\n55\n86\n42\n69\n77\n75\n37\n50\n48\n140\n28\n22\n4\n78\n45\n100\n53\n70\n9\n184\n87\n186\n169\n166\n120\n165\n152\n73\n172\n133\n131\n90\n41\n11\n62\n59\n168\n108\n52\n3\n181\n122\n106\n60\n145\n36\n141\n134\n76\n115\n17\n143\n44\n84\n119\n81\n158\n160\n117\n183\n149\n23\n161\n155\n118\n130\n27\n7\n10\n146\n97\n79\n150\n129\n64\n92\n126\n180\n156\n15\n113\n30\n93\n29\n20\n31\n114\n39\n32\n157\n54\n65\n109\n68\n137\n178\n21\n71\n174\n148\n105\n89\n96\n132\n154\n74\n12\n25\n128\n176\n123\n144\n88\n175\n153\n139\n124\n58\n91\n177\n72\n151\n107\n94\n85\n104\n66\n83\n102\n110\n43\n98\n103\n24\n14\n8\n5\n57\n13\n101\n26\n121\n147\n163\n179\n136\n\n> <PUBCHEM_MMFF94_PARTIAL_CHARGES>\n12\n1 -0.14\n10 0.3\n15 0.58\n16 0.58\n2 -0.14\n3 -0.38\n4 -0.38\n5 -0.66\n6 -0.66\n7 0.3\n8 0.3\n9 0.3\n\n> <PUBCHEM_EFFECTIVE_ROTOR_COUNT>\n9\n\n> <PUBCHEM_PHARMACOPHORE_FEATURES>\n2\n1 3 acceptor\n1 4 acceptor\n\n> <PUBCHEM_HEAVY_ATOM_COUNT>\n16\n\n> <PUBCHEM_ATOM_DEF_STEREO_COUNT>\n0\n\n> <PUBCHEM_ATOM_UDEF_STEREO_COUNT>\n0\n\n> <PUBCHEM_BOND_DEF_STEREO_COUNT>\n0\n\n> <PUBCHEM_BOND_UDEF_STEREO_COUNT>\n0\n\n> <PUBCHEM_ISOTOPIC_ATOM_COUNT>\n0\n\n> <PUBCHEM_COMPONENT_COUNT>\n1\n\n> <PUBCHEM_CACTVS_TAUTO_COUNT>\n1\n\n> <PUBCHEM_CONFORMER_ID>\n00000C2D00000001\n\n> <PUBCHEM_MMFF94_ENERGY>\n26.3148\n\n> <PUBCHEM_FEATURE_SELFOVERLAP>\n10.149\n\n> <PUBCHEM_SHAPE_FINGERPRINT>\n12400797 292 18336549416752239128\n12553582 1 18336538322471632610\n12596599 1 18272100404212592298\n12633257 1 18338510846616946211\n12932764 1 18040990735160439957\n14251739 40 13470130609932960773\n14251745 187 17829325035882032538\n15375462 189 18186800253406264386\n16752209 62 18056476149858271281\n18186145 218 18334572455821475020\n18522851 12 18260265239681876443\n19422 9 18271811279878002181\n20442098 301 17986383597667948759\n20645477 70 18269826674538266063\n23559900 14 17987808397270706663\n23598291 2 18411705412808434613\n351380 180 13973678374248572969\n58051976 378 18048311446929653284\n\n> <PUBCHEM_SHAPE_MULTIPOLES>\n334.71\n7.4\n2.56\n1.82\n2.22\n0.06\n0.08\n-0.85\n0.12\n0.2\n-0.34\n-1.18\n-0.74\n-0.73\n\n> <PUBCHEM_SHAPE_SELFOVERLAP>\n578.367\n\n> <PUBCHEM_SHAPE_VOLUME>\n225\n\n> <PUBCHEM_COORDINATE_TYPE>\n2\n5\n10\n\n$$$$\n",
+                "binary": false
+              }
+            ],
+            "kwargs": {
+              "defaultRepresentation": true,
+              "ext": "sdf"
+            }
+          },
+          {
+            "target": "Widget",
+            "type": "call_method",
+            "methodName": "setSize",
+            "reconstruc_color_scheme": false,
+            "args": [
+              "300px",
+              "300px"
+            ],
+            "kwargs": {}
+          }
+        ],
+        "_ngl_original_stage_parameters": {
+          "impostor": true,
+          "quality": "medium",
+          "workerDefault": true,
+          "sampleLevel": 0,
+          "backgroundColor": "white",
+          "rotateSpeed": 2,
+          "zoomSpeed": 1.2,
+          "panSpeed": 1,
+          "clipNear": 0,
+          "clipFar": 100,
+          "clipDist": 10,
+          "fogNear": 50,
+          "fogFar": 100,
+          "cameraFov": 40,
+          "cameraEyeSep": 0.3,
+          "cameraType": "perspective",
+          "lightColor": 14540253,
+          "lightIntensity": 1,
+          "ambientColor": 14540253,
+          "ambientIntensity": 0.2,
+          "hoverTimeout": 0,
+          "tooltip": true,
+          "mousePreset": "default"
+        },
+        "_ngl_repr_dict": {
+          "0": {
+            "0": {
+              "type": "ball+stick",
+              "params": {
+                "lazy": false,
+                "visible": true,
+                "quality": "high",
+                "sphereDetail": 2,
+                "radialSegments": 20,
+                "openEnded": true,
+                "disableImpostor": false,
+                "aspectRatio": 1.5,
+                "lineOnly": false,
+                "cylinderOnly": false,
+                "multipleBond": "off",
+                "bondScale": 0.3,
+                "bondSpacing": 0.75,
+                "linewidth": 2,
+                "radiusType": "size",
+                "radiusData": {},
+                "radiusSize": 0.15,
+                "radiusScale": 2,
+                "assembly": "default",
+                "defaultAssembly": "",
+                "clipNear": 0,
+                "clipRadius": 0,
+                "clipCenter": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "flatShaded": false,
+                "opacity": 1,
+                "depthWrite": true,
+                "side": "double",
+                "wireframe": false,
+                "colorScheme": "element",
+                "colorScale": "",
+                "colorReverse": false,
+                "colorValue": 9474192,
+                "colorMode": "hcl",
+                "roughness": 0.4,
+                "metalness": 0,
+                "diffuse": 16777215,
+                "diffuseInterior": false,
+                "useInteriorColor": true,
+                "interiorColor": 2236962,
+                "interiorDarkening": 0,
+                "matrix": {
+                  "elements": [
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                "disablePicking": false,
+                "sele": ""
+              }
+            }
+          }
+        },
+        "_ngl_version": "2.0.0-dev.36",
+        "_ngl_view_id": [
+          "F56D9E8F-2EC6-4626-BA9D-80F408B746FB"
+        ],
+        "_player_dict": {},
+        "_scene_position": {},
+        "_scene_rotation": {},
+        "_synced_model_ids": [],
+        "_synced_repr_model_ids": [],
+        "layout": "IPY_MODEL_edccac721a2c4b51b7c0ec3d656d83b6",
+        "n_components": 1,
+        "picked": {}
+      }
+    },
+    "a72191a33f97406a948447260771d084": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "3cb42a89a46744c9bdc7bd6ab93ac078": {
+      "model_name": "ImageModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_a72191a33f97406a948447260771d084",
+        "width": "900.0"
+      }
+    },
+    "2bfc74f363f0496fab6b02337b943070": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "9a4a4578695a4c8c8d4f6673a036e69b": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "e57dbb00ef16442a895631db5773f476": {
+      "model_name": "PlayModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_2bfc74f363f0496fab6b02337b943070",
+        "max": 0,
+        "style": "IPY_MODEL_9a4a4578695a4c8c8d4f6673a036e69b"
+      }
+    },
+    "d1803071d0a84839b3ceb2e793199d65": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "f512924736744ebe911f1dc620cb23e5": {
+      "model_name": "SliderStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "ee2e3a2906364c5c8de5d7f12f061297": {
+      "model_name": "IntSliderModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_d1803071d0a84839b3ceb2e793199d65",
+        "max": 0,
+        "style": "IPY_MODEL_f512924736744ebe911f1dc620cb23e5"
+      }
+    },
+    "f8d0da4474db414fa1a6d3be93066437": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "a2ef01c3d73445ec927fb0938583d25d": {
+      "model_name": "HBoxModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "children": [
+          "IPY_MODEL_e57dbb00ef16442a895631db5773f476",
+          "IPY_MODEL_ee2e3a2906364c5c8de5d7f12f061297"
+        ],
+        "layout": "IPY_MODEL_f8d0da4474db414fa1a6d3be93066437"
+      }
+    },
+    "ae61ff7bd3704eb3a4148c0ab2a8aeb9": {
+      "model_name": "LinkModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "source": [
+          "IPY_MODEL_e57dbb00ef16442a895631db5773f476",
+          "value"
+        ],
+        "target": [
+          "IPY_MODEL_ee2e3a2906364c5c8de5d7f12f061297",
+          "value"
+        ]
+      }
+    },
+    "6cc2b007c0774605b79f27414a5bcc31": {
+      "model_name": "LinkModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "source": [
+          "IPY_MODEL_e57dbb00ef16442a895631db5773f476",
+          "value"
+        ],
+        "target": [
+          "IPY_MODEL_ac46912bfb804c3ab4cf00e41f03bba2",
+          "frame"
+        ]
+      }
+    },
+    "2a9851fc0399489b8008ad1fb6ef8343": {
+      "model_name": "LinkModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "source": [
+          "IPY_MODEL_e57dbb00ef16442a895631db5773f476",
+          "max"
+        ],
+        "target": [
+          "IPY_MODEL_ac46912bfb804c3ab4cf00e41f03bba2",
+          "max_frame"
+        ]
+      }
+    },
+    "6fbec7fecd2a4fe3b5191d99b62837b5": {
+      "model_name": "LinkModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "source": [
+          "IPY_MODEL_ee2e3a2906364c5c8de5d7f12f061297",
+          "max"
+        ],
+        "target": [
+          "IPY_MODEL_ac46912bfb804c3ab4cf00e41f03bba2",
+          "max_frame"
+        ]
+      }
+    },
+    "165edcbcc83a40fb86cd66d215efdb35": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {
+        "width": "34px"
+      }
+    },
+    "bf6b6135b8b64886a77b913a256ca41f": {
+      "model_name": "ButtonStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "12f332d5a12e4b01b61a5c6c4c764ef6": {
+      "model_name": "ButtonModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "icon": "compress",
+        "layout": "IPY_MODEL_165edcbcc83a40fb86cd66d215efdb35",
+        "style": "IPY_MODEL_bf6b6135b8b64886a77b913a256ca41f"
+      }
+    },
+    "96e7fc9f7c0a453e8d04ae425b0b00b0": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "17e0d608e90b41438e0f161a059b5bcc": {
+      "model_name": "NGLModel",
+      "model_module": "nglview-js-widgets",
+      "model_module_version": "2.7.5",
+      "state": {
+        "_camera_orientation": [
+          22.184107971785636,
+          0,
+          0,
+          0,
+          0,
+          22.184107971785636,
+          0,
+          0,
+          0,
+          0,
+          22.184107971785636,
+          0,
+          0.07749998569488525,
+          0.46719998121261597,
+          0.458050012588501,
+          1
+        ],
+        "_dom_classes": [],
+        "_ibtn_fullscreen": "IPY_MODEL_d57f98c471054c54b89ac15f50e67b3f",
+        "_igui": null,
+        "_iplayer": "IPY_MODEL_99f47ff599e44cfeb81e7556acbf064f",
+        "_ngl_color_dict": {},
+        "_ngl_coordinate_resource": {},
+        "_ngl_full_stage_parameters": {
+          "impostor": true,
+          "quality": "medium",
+          "workerDefault": true,
+          "sampleLevel": 0,
+          "backgroundColor": "white",
+          "rotateSpeed": 2,
+          "zoomSpeed": 1.2,
+          "panSpeed": 1,
+          "clipNear": 0,
+          "clipFar": 100,
+          "clipDist": 10,
+          "fogNear": 50,
+          "fogFar": 100,
+          "cameraFov": 40,
+          "cameraEyeSep": 0.3,
+          "cameraType": "perspective",
+          "lightColor": 14540253,
+          "lightIntensity": 1,
+          "ambientColor": 14540253,
+          "ambientIntensity": 0.2,
+          "hoverTimeout": 0,
+          "tooltip": true,
+          "mousePreset": "default"
+        },
+        "_ngl_msg_archive": [
+          {
+            "target": "Stage",
+            "type": "call_method",
+            "methodName": "loadFile",
+            "reconstruc_color_scheme": false,
+            "args": [
+              {
+                "type": "blob",
+                "data": "492405\n  -OEChem-04272000373D\n\n 15 15  0     0  0  0  0  0  0999 V2000\n    2.6924    1.6377   -0.0017 F   0  0  0  0  0  0  0  0  0  0  0  0\n   -1.0192   -2.1677    0.0071 O   0  0  0  0  0  0  0  0  0  0  0  0\n   -2.4032    0.8017    1.1292 O   0  0  0  0  0  0  0  0  0  0  0  0\n    1.2342   -1.6108   -0.0163 N   0  0  0  0  0  0  0  0  0  0  0  0\n    0.4419    1.0594    0.0219 N   0  0  0  0  0  0  0  0  0  0  0  0\n   -2.4023    0.8152   -1.1973 N   0  0  0  0  0  0  0  0  0  0  0  0\n   -0.4657    0.1294    0.0236 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -0.1165   -1.3449    0.0035 C   0  0  0  0  0  0  0  0  0  0  0  0\n    2.1574   -0.6077   -0.0182 C   0  0  0  0  0  0  0  0  0  0  0  0\n    1.7535    0.6653    0.0003 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -1.8725    0.6225    0.0480 C   0  0  0  0  0  0  0  0  0  0  0  0\n    1.5608   -2.5721   -0.0304 H   0  0  0  0  0  0  0  0  0  0  0  0\n    3.1981   -0.9025   -0.0348 H   0  0  0  0  0  0  0  0  0  0  0  0\n   -3.3531    1.1487   -1.3156 H   0  0  0  0  0  0  0  0  0  0  0  0\n   -1.8742    0.6352   -2.0453 H   0  0  0  0  0  0  0  0  0  0  0  0\n  1 10  1  0  0  0  0\n  2  8  2  0  0  0  0\n  3 11  2  0  0  0  0\n  4  8  1  0  0  0  0\n  4  9  1  0  0  0  0\n  4 12  1  0  0  0  0\n  5  7  2  0  0  0  0\n  5 10  1  0  0  0  0\n  6 11  1  0  0  0  0\n  6 14  1  0  0  0  0\n  6 15  1  0  0  0  0\n  7  8  1  0  0  0  0\n  7 11  1  0  0  0  0\n  9 10  2  0  0  0  0\n  9 13  1  0  0  0  0\nM  END\n> <PUBCHEM_COMPOUND_CID>\n492405\n\n> <PUBCHEM_CONFORMER_RMSD>\n0.4\n\n> <PUBCHEM_CONFORMER_DIVERSEORDER>\n1\n3\n4\n2\n\n> <PUBCHEM_MMFF94_PARTIAL_CHARGES>\n15\n1 -0.15\n10 0.32\n11 0.63\n12 0.37\n13 0.15\n14 0.37\n15 0.37\n2 -0.57\n3 -0.57\n4 -0.54\n5 -0.62\n6 -0.8\n7 0.45\n8 0.63\n9 -0.04\n\n> <PUBCHEM_EFFECTIVE_ROTOR_COUNT>\n1\n\n> <PUBCHEM_PHARMACOPHORE_FEATURES>\n7\n1 2 acceptor\n1 3 acceptor\n1 4 donor\n1 5 acceptor\n1 6 donor\n1 7 anion\n6 4 5 7 8 9 10 rings\n\n> <PUBCHEM_HEAVY_ATOM_COUNT>\n11\n\n> <PUBCHEM_ATOM_DEF_STEREO_COUNT>\n0\n\n> <PUBCHEM_ATOM_UDEF_STEREO_COUNT>\n0\n\n> <PUBCHEM_BOND_DEF_STEREO_COUNT>\n0\n\n> <PUBCHEM_BOND_UDEF_STEREO_COUNT>\n0\n\n> <PUBCHEM_ISOTOPIC_ATOM_COUNT>\n0\n\n> <PUBCHEM_COMPONENT_COUNT>\n1\n\n> <PUBCHEM_CACTVS_TAUTO_COUNT>\n7\n\n> <PUBCHEM_CONFORMER_ID>\n0007837500000001\n\n> <PUBCHEM_MMFF94_ENERGY>\n18.2856\n\n> <PUBCHEM_FEATURE_SELFOVERLAP>\n35.521\n\n> <PUBCHEM_SHAPE_FINGERPRINT>\n11206711 2 18050285070258904404\n13380535 21 18266196061468549502\n16945 1 18338798888556382790\n18185500 45 17621315736794077063\n21040471 1 18410856572746250554\n241688 4 17259910615709676234\n2748010 2 18339647853404116318\n29004967 10 18118411635212475875\n5084963 1 18129647596160728709\n\n> <PUBCHEM_SHAPE_MULTIPOLES>\n192.42\n3.42\n1.83\n0.78\n0.2\n0.73\n-0.02\n-1.39\n-0.05\n-0.42\n0\n0.52\n-0.14\n0.02\n\n> <PUBCHEM_SHAPE_SELFOVERLAP>\n404.254\n\n> <PUBCHEM_SHAPE_VOLUME>\n107.4\n\n> <PUBCHEM_COORDINATE_TYPE>\n2\n5\n10\n\n$$$$\n",
+                "binary": false
+              }
+            ],
+            "kwargs": {
+              "defaultRepresentation": true,
+              "ext": "sdf"
+            }
+          },
+          {
+            "target": "Widget",
+            "type": "call_method",
+            "methodName": "setSize",
+            "reconstruc_color_scheme": false,
+            "args": [
+              "300px",
+              "300px"
+            ],
+            "kwargs": {}
+          }
+        ],
+        "_ngl_original_stage_parameters": {
+          "impostor": true,
+          "quality": "medium",
+          "workerDefault": true,
+          "sampleLevel": 0,
+          "backgroundColor": "white",
+          "rotateSpeed": 2,
+          "zoomSpeed": 1.2,
+          "panSpeed": 1,
+          "clipNear": 0,
+          "clipFar": 100,
+          "clipDist": 10,
+          "fogNear": 50,
+          "fogFar": 100,
+          "cameraFov": 40,
+          "cameraEyeSep": 0.3,
+          "cameraType": "perspective",
+          "lightColor": 14540253,
+          "lightIntensity": 1,
+          "ambientColor": 14540253,
+          "ambientIntensity": 0.2,
+          "hoverTimeout": 0,
+          "tooltip": true,
+          "mousePreset": "default"
+        },
+        "_ngl_repr_dict": {
+          "0": {
+            "0": {
+              "type": "ball+stick",
+              "params": {
+                "lazy": false,
+                "visible": true,
+                "quality": "high",
+                "sphereDetail": 2,
+                "radialSegments": 20,
+                "openEnded": true,
+                "disableImpostor": false,
+                "aspectRatio": 1.5,
+                "lineOnly": false,
+                "cylinderOnly": false,
+                "multipleBond": "off",
+                "bondScale": 0.3,
+                "bondSpacing": 0.75,
+                "linewidth": 2,
+                "radiusType": "size",
+                "radiusData": {},
+                "radiusSize": 0.15,
+                "radiusScale": 2,
+                "assembly": "default",
+                "defaultAssembly": "",
+                "clipNear": 0,
+                "clipRadius": 0,
+                "clipCenter": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "flatShaded": false,
+                "opacity": 1,
+                "depthWrite": true,
+                "side": "double",
+                "wireframe": false,
+                "colorScheme": "element",
+                "colorScale": "",
+                "colorReverse": false,
+                "colorValue": 9474192,
+                "colorMode": "hcl",
+                "roughness": 0.4,
+                "metalness": 0,
+                "diffuse": 16777215,
+                "diffuseInterior": false,
+                "useInteriorColor": true,
+                "interiorColor": 2236962,
+                "interiorDarkening": 0,
+                "matrix": {
+                  "elements": [
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                "disablePicking": false,
+                "sele": ""
+              }
+            }
+          }
+        },
+        "_ngl_version": "2.0.0-dev.36",
+        "_ngl_view_id": [
+          "446461AE-A6B1-49ED-8687-114B2CB076F3"
+        ],
+        "_player_dict": {},
+        "_scene_position": {},
+        "_scene_rotation": {},
+        "_synced_model_ids": [],
+        "_synced_repr_model_ids": [],
+        "layout": "IPY_MODEL_96e7fc9f7c0a453e8d04ae425b0b00b0",
+        "n_components": 1,
+        "picked": {}
+      }
+    },
+    "9d3484cb85cc4c27983c8a832a355a98": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "29e7d552c7114c2c94b01132e0d44444": {
+      "model_name": "ImageModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_9d3484cb85cc4c27983c8a832a355a98",
+        "width": "900.0"
+      }
+    },
+    "2233d7b89950438b8818723526478302": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "37143c9cd18c438e99c18bcad7b9a580": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "ed2e110b169945b8898c9a2d43288112": {
+      "model_name": "PlayModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_2233d7b89950438b8818723526478302",
+        "max": 0,
+        "style": "IPY_MODEL_37143c9cd18c438e99c18bcad7b9a580"
+      }
+    },
+    "a37fdcedaa834e3685cb42726e4b1321": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "18487cf4c6894b369aee3ec2c85e906a": {
+      "model_name": "SliderStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "cc77415ed21f4a80955be29d84a2ad28": {
+      "model_name": "IntSliderModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_a37fdcedaa834e3685cb42726e4b1321",
+        "max": 0,
+        "style": "IPY_MODEL_18487cf4c6894b369aee3ec2c85e906a"
+      }
+    },
+    "3c8bb213cc974bddbc8c21cd6822e218": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "99f47ff599e44cfeb81e7556acbf064f": {
+      "model_name": "HBoxModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "children": [
+          "IPY_MODEL_ed2e110b169945b8898c9a2d43288112",
+          "IPY_MODEL_cc77415ed21f4a80955be29d84a2ad28"
+        ],
+        "layout": "IPY_MODEL_3c8bb213cc974bddbc8c21cd6822e218"
+      }
+    },
+    "c62f6e91a84f4894a8deb012591f5014": {
+      "model_name": "LinkModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "source": [
+          "IPY_MODEL_ed2e110b169945b8898c9a2d43288112",
+          "value"
+        ],
+        "target": [
+          "IPY_MODEL_cc77415ed21f4a80955be29d84a2ad28",
+          "value"
+        ]
+      }
+    },
+    "9df04a7b11c444bf90f83bed93a3e234": {
+      "model_name": "LinkModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "source": [
+          "IPY_MODEL_ed2e110b169945b8898c9a2d43288112",
+          "value"
+        ],
+        "target": [
+          "IPY_MODEL_17e0d608e90b41438e0f161a059b5bcc",
+          "frame"
+        ]
+      }
+    },
+    "cc17cf709e2d45b7a72e39ab7cdde0e6": {
+      "model_name": "LinkModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "source": [
+          "IPY_MODEL_ed2e110b169945b8898c9a2d43288112",
+          "max"
+        ],
+        "target": [
+          "IPY_MODEL_17e0d608e90b41438e0f161a059b5bcc",
+          "max_frame"
+        ]
+      }
+    },
+    "6f22de4633284dfca42b5149bfe37175": {
+      "model_name": "LinkModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "source": [
+          "IPY_MODEL_cc77415ed21f4a80955be29d84a2ad28",
+          "max"
+        ],
+        "target": [
+          "IPY_MODEL_17e0d608e90b41438e0f161a059b5bcc",
+          "max_frame"
+        ]
+      }
+    },
+    "b77cbdfffcda4541b5f239cbc8cc1a50": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {
+        "width": "34px"
+      }
+    },
+    "04aa10cca1184f379e1de0999f601590": {
+      "model_name": "ButtonStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "d57f98c471054c54b89ac15f50e67b3f": {
+      "model_name": "ButtonModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "icon": "compress",
+        "layout": "IPY_MODEL_b77cbdfffcda4541b5f239cbc8cc1a50",
+        "style": "IPY_MODEL_04aa10cca1184f379e1de0999f601590"
+      }
+    },
+    "1078f8fa588e48b3b575c527d3495f2d": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "7d6822f89c064a2097b3d6822e282777": {
+      "model_name": "NGLModel",
+      "model_module": "nglview-js-widgets",
+      "model_module_version": "2.7.5",
+      "state": {
+        "_camera_orientation": [
+          29.66630998355224,
+          0,
+          0,
+          0,
+          0,
+          29.66630998355224,
+          0,
+          0,
+          0,
+          0,
+          29.66630998355224,
+          0,
+          -0.4181499481201172,
+          0.23989999294281006,
+          0.018800020217895508,
+          1
+        ],
+        "_dom_classes": [],
+        "_ibtn_fullscreen": "IPY_MODEL_0db1af0fbe7846beb49217af1278e011",
+        "_igui": null,
+        "_iplayer": "IPY_MODEL_2b1c434db8c645feadcb8cea2dfca770",
+        "_ngl_color_dict": {},
+        "_ngl_coordinate_resource": {},
+        "_ngl_full_stage_parameters": {
+          "impostor": true,
+          "quality": "medium",
+          "workerDefault": true,
+          "sampleLevel": 0,
+          "backgroundColor": "white",
+          "rotateSpeed": 2,
+          "zoomSpeed": 1.2,
+          "panSpeed": 1,
+          "clipNear": 0,
+          "clipFar": 100,
+          "clipDist": 10,
+          "fogNear": 50,
+          "fogFar": 100,
+          "cameraFov": 40,
+          "cameraEyeSep": 0.3,
+          "cameraType": "perspective",
+          "lightColor": 14540253,
+          "lightIntensity": 1,
+          "ambientColor": 14540253,
+          "ambientIntensity": 0.2,
+          "hoverTimeout": 0,
+          "tooltip": true,
+          "mousePreset": "default"
+        },
+        "_ngl_msg_archive": [
+          {
+            "target": "Stage",
+            "type": "call_method",
+            "methodName": "loadFile",
+            "reconstruc_color_scheme": false,
+            "args": [
+              {
+                "type": "blob",
+                "data": "445154\n  -OEChem-04272000463D\n\n 29 30  0     0  0  0  0  0  0999 V2000\n   -4.8060   -2.1619   -0.3965 O   0  0  0  0  0  0  0  0  0  0  0  0\n   -4.1010    2.4953    0.3775 O   0  0  0  0  0  0  0  0  0  0  0  0\n    6.2037   -0.3631    0.0735 O   0  0  0  0  0  0  0  0  0  0  0  0\n   -1.7324   -0.2540    0.0441 C   0  0  0  0  0  0  0  0  0  0  0  0\n    2.1022    0.2574   -0.0662 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -0.2763   -0.4793    0.0741 C   0  0  0  0  0  0  0  0  0  0  0  0\n    0.6650    0.4755   -0.1147 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -2.2240    1.0281    0.2263 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -2.5810   -1.3290   -0.1646 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -3.9593   -1.1159   -0.1919 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -3.6023    1.2414    0.1990 C   0  0  0  0  0  0  0  0  0  0  0  0\n    2.6160   -0.8654    0.5823 C   0  0  0  0  0  0  0  0  0  0  0  0\n    2.9667    1.1719   -0.6680 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -4.4698    0.1693   -0.0101 C   0  0  0  0  0  0  0  0  0  0  0  0\n    3.9944   -1.0739    0.6292 C   0  0  0  0  0  0  0  0  0  0  0  0\n    4.3451    0.9632   -0.6213 C   0  0  0  0  0  0  0  0  0  0  0  0\n    4.8590   -0.1596    0.0274 C   0  0  0  0  0  0  0  0  0  0  0  0\n    0.0093   -1.5130    0.2494 H   0  0  0  0  0  0  0  0  0  0  0  0\n    0.3752    1.4977   -0.3420 H   0  0  0  0  0  0  0  0  0  0  0  0\n   -1.5829    1.8840    0.4144 H   0  0  0  0  0  0  0  0  0  0  0  0\n   -2.1858   -2.3318   -0.3082 H   0  0  0  0  0  0  0  0  0  0  0  0\n    1.9849   -1.5927    1.0844 H   0  0  0  0  0  0  0  0  0  0  0  0\n    2.5852    2.0524   -1.1795 H   0  0  0  0  0  0  0  0  0  0  0  0\n   -5.5451    0.3285   -0.0325 H   0  0  0  0  0  0  0  0  0  0  0  0\n    4.3829   -1.9498    1.1419 H   0  0  0  0  0  0  0  0  0  0  0  0\n    5.0137    1.6788   -1.0921 H   0  0  0  0  0  0  0  0  0  0  0  0\n   -4.2831   -2.9751   -0.5027 H   0  0  0  0  0  0  0  0  0  0  0  0\n   -5.0717    2.4585    0.3285 H   0  0  0  0  0  0  0  0  0  0  0  0\n    6.3814   -1.1862    0.5602 H   0  0  0  0  0  0  0  0  0  0  0  0\n  1 10  1  0  0  0  0\n  1 27  1  0  0  0  0\n  2 11  1  0  0  0  0\n  2 28  1  0  0  0  0\n  3 17  1  0  0  0  0\n  3 29  1  0  0  0  0\n  4  6  1  0  0  0  0\n  4  8  2  0  0  0  0\n  4  9  1  0  0  0  0\n  5  7  1  0  0  0  0\n  5 12  2  0  0  0  0\n  5 13  1  0  0  0  0\n  6  7  2  0  0  0  0\n  6 18  1  0  0  0  0\n  7 19  1  0  0  0  0\n  8 11  1  0  0  0  0\n  8 20  1  0  0  0  0\n  9 10  2  0  0  0  0\n  9 21  1  0  0  0  0\n 10 14  1  0  0  0  0\n 11 14  2  0  0  0  0\n 12 15  1  0  0  0  0\n 12 22  1  0  0  0  0\n 13 16  2  0  0  0  0\n 13 23  1  0  0  0  0\n 14 24  1  0  0  0  0\n 15 17  2  0  0  0  0\n 15 25  1  0  0  0  0\n 16 17  1  0  0  0  0\n 16 26  1  0  0  0  0\nM  END\n> <PUBCHEM_COMPOUND_CID>\n445154\n\n> <PUBCHEM_CONFORMER_RMSD>\n0.6\n\n> <PUBCHEM_CONFORMER_DIVERSEORDER>\n2\n1\n\n> <PUBCHEM_MMFF94_PARTIAL_CHARGES>\n29\n1 -0.53\n10 0.08\n11 0.08\n12 -0.15\n13 -0.15\n14 -0.15\n15 -0.15\n16 -0.15\n17 0.08\n18 0.15\n19 0.15\n2 -0.53\n20 0.15\n21 0.15\n22 0.15\n23 0.15\n24 0.15\n25 0.15\n26 0.15\n27 0.45\n28 0.45\n29 0.45\n3 -0.53\n4 0.03\n5 0.03\n6 -0.18\n7 -0.18\n8 -0.15\n9 -0.15\n\n> <PUBCHEM_EFFECTIVE_ROTOR_COUNT>\n2\n\n> <PUBCHEM_PHARMACOPHORE_FEATURES>\n5\n1 1 donor\n1 2 donor\n1 3 donor\n6 4 8 9 10 11 14 rings\n6 5 12 13 15 16 17 rings\n\n> <PUBCHEM_HEAVY_ATOM_COUNT>\n17\n\n> <PUBCHEM_ATOM_DEF_STEREO_COUNT>\n0\n\n> <PUBCHEM_ATOM_UDEF_STEREO_COUNT>\n0\n\n> <PUBCHEM_BOND_DEF_STEREO_COUNT>\n1\n\n> <PUBCHEM_BOND_UDEF_STEREO_COUNT>\n0\n\n> <PUBCHEM_ISOTOPIC_ATOM_COUNT>\n0\n\n> <PUBCHEM_COMPONENT_COUNT>\n1\n\n> <PUBCHEM_CACTVS_TAUTO_COUNT>\n20\n\n> <PUBCHEM_CONFORMER_ID>\n0006CAE200000002\n\n> <PUBCHEM_MMFF94_ENERGY>\n49.607\n\n> <PUBCHEM_FEATURE_SELFOVERLAP>\n25.373\n\n> <PUBCHEM_SHAPE_FINGERPRINT>\n10014705 185 18113896031716294869\n10595046 47 18336547204748856716\n10616163 171 18411139168604729455\n10912923 1 18187081750179493368\n11315181 36 18408040727672988104\n12107183 9 17759799252039973274\n12236239 1 18409449181189184810\n12670546 56 18335415789967024916\n13167823 11 18409165519488960790\n13288520 33 18341894117163180047\n13583140 156 17418363684266412222\n13675066 3 17917988373888227614\n13760787 5 17095249124728923956\n14251718 22 18342739650105047618\n14508225 48 18268695264937878261\n14528608 73 18261398892510980172\n15042514 8 18197498635496392455\n15196674 1 18410012152227455220\n15788980 27 18335424569011851848\n17834072 33 18335421296283708566\n17844677 252 18342745143141762304\n18186145 218 16805040731158450208\n18681886 176 18341610452132742322\n19489759 90 18273493468396678499\n200 152 18409728490811561187\n20279233 1 16343705430420501028\n20281475 54 18334286548670597554\n20300324 65 18411419544506804761\n20612939 158 17531251699174972428\n20645477 56 18343023242838589761\n20645477 70 18113333094642728002\n21033648 29 16199857384941753498\n21065198 48 18335136479680159738\n21267235 1 18336553788659707179\n21426921 1 18413670210707749065\n21709351 56 18333446543356635732\n22646028 1 18408039628150693958\n2297311 6 18060430126488230821\n2306618 200 18060146427472796449\n23402539 116 18411415107288824917\n23402655 69 18334859407387734340\n23557571 272 18131357401076973429\n23559900 14 18341321301327255049\n29717793 49 18412825789666403054\n300161 21 18334006181684594920\n34797466 226 17559968769623523516\n3545911 37 18342178830044039441\n4214541 1 18410292501738007581\n474 4 17387136575323497100\n4990 188 18272660034662488046\n5104073 3 18407759244275226768\n542803 24 18342177765198079148\n559249 180 18410570643915243458\n573450 72 18410005520634134347\n6327066 14 18045495310569268317\n67856867 119 18336545040212544260\n7495541 125 17774720977917645392\n77779 3 18409731759423929284\n9709674 26 18409738356367816490\n9971528 1 17822009839695352596\n\n> <PUBCHEM_SHAPE_MULTIPOLES>\n332.24\n12.88\n1.74\n0.72\n5.99\n0.25\n0\n-0.98\n-0.25\n-2.21\n0.01\n0.19\n0.01\n-1.17\n\n> <PUBCHEM_SHAPE_SELFOVERLAP>\n719.006\n\n> <PUBCHEM_SHAPE_VOLUME>\n182.8\n\n> <PUBCHEM_COORDINATE_TYPE>\n2\n5\n10\n\n$$$$\n",
+                "binary": false
+              }
+            ],
+            "kwargs": {
+              "defaultRepresentation": true,
+              "ext": "sdf"
+            }
+          },
+          {
+            "target": "Widget",
+            "type": "call_method",
+            "methodName": "setSize",
+            "reconstruc_color_scheme": false,
+            "args": [
+              "300px",
+              "300px"
+            ],
+            "kwargs": {}
+          }
+        ],
+        "_ngl_original_stage_parameters": {
+          "impostor": true,
+          "quality": "medium",
+          "workerDefault": true,
+          "sampleLevel": 0,
+          "backgroundColor": "white",
+          "rotateSpeed": 2,
+          "zoomSpeed": 1.2,
+          "panSpeed": 1,
+          "clipNear": 0,
+          "clipFar": 100,
+          "clipDist": 10,
+          "fogNear": 50,
+          "fogFar": 100,
+          "cameraFov": 40,
+          "cameraEyeSep": 0.3,
+          "cameraType": "perspective",
+          "lightColor": 14540253,
+          "lightIntensity": 1,
+          "ambientColor": 14540253,
+          "ambientIntensity": 0.2,
+          "hoverTimeout": 0,
+          "tooltip": true,
+          "mousePreset": "default"
+        },
+        "_ngl_repr_dict": {
+          "0": {
+            "0": {
+              "type": "ball+stick",
+              "params": {
+                "lazy": false,
+                "visible": true,
+                "quality": "high",
+                "sphereDetail": 2,
+                "radialSegments": 20,
+                "openEnded": true,
+                "disableImpostor": false,
+                "aspectRatio": 1.5,
+                "lineOnly": false,
+                "cylinderOnly": false,
+                "multipleBond": "off",
+                "bondScale": 0.3,
+                "bondSpacing": 0.75,
+                "linewidth": 2,
+                "radiusType": "size",
+                "radiusData": {},
+                "radiusSize": 0.15,
+                "radiusScale": 2,
+                "assembly": "default",
+                "defaultAssembly": "",
+                "clipNear": 0,
+                "clipRadius": 0,
+                "clipCenter": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "flatShaded": false,
+                "opacity": 1,
+                "depthWrite": true,
+                "side": "double",
+                "wireframe": false,
+                "colorScheme": "element",
+                "colorScale": "",
+                "colorReverse": false,
+                "colorValue": 9474192,
+                "colorMode": "hcl",
+                "roughness": 0.4,
+                "metalness": 0,
+                "diffuse": 16777215,
+                "diffuseInterior": false,
+                "useInteriorColor": true,
+                "interiorColor": 2236962,
+                "interiorDarkening": 0,
+                "matrix": {
+                  "elements": [
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                "disablePicking": false,
+                "sele": ""
+              }
+            }
+          }
+        },
+        "_ngl_version": "2.0.0-dev.36",
+        "_ngl_view_id": [
+          "14DE45A1-9F4C-4726-964A-49FCDF450B53"
+        ],
+        "_player_dict": {},
+        "_scene_position": {},
+        "_scene_rotation": {},
+        "_synced_model_ids": [],
+        "_synced_repr_model_ids": [],
+        "layout": "IPY_MODEL_1078f8fa588e48b3b575c527d3495f2d",
+        "n_components": 1,
+        "picked": {}
+      }
+    },
+    "96ac620e1e3f4a21a28089ba8cdcef63": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "e1c485ac482f45db926c767912c9692c": {
+      "model_name": "ImageModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_96ac620e1e3f4a21a28089ba8cdcef63",
+        "width": "900.0"
+      }
+    },
+    "3c498fe415da41f7b7247a1c9abd816e": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "439222a591014de2b41e0efd8ad47687": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "1a6f592bff414819a32769d4ee4e913c": {
+      "model_name": "PlayModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_3c498fe415da41f7b7247a1c9abd816e",
+        "max": 0,
+        "style": "IPY_MODEL_439222a591014de2b41e0efd8ad47687"
+      }
+    },
+    "d8fc257ed0df4bfca653828f6ec5e9c2": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "74657b201b324471a0531d82630222d9": {
+      "model_name": "SliderStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "a7ecab8f5f2f4596993890fbee2b0c78": {
+      "model_name": "IntSliderModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_d8fc257ed0df4bfca653828f6ec5e9c2",
+        "max": 0,
+        "style": "IPY_MODEL_74657b201b324471a0531d82630222d9"
+      }
+    },
+    "b72cb1f227ce4f38b7245db8f4115b57": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "2b1c434db8c645feadcb8cea2dfca770": {
+      "model_name": "HBoxModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "children": [
+          "IPY_MODEL_1a6f592bff414819a32769d4ee4e913c",
+          "IPY_MODEL_a7ecab8f5f2f4596993890fbee2b0c78"
+        ],
+        "layout": "IPY_MODEL_b72cb1f227ce4f38b7245db8f4115b57"
+      }
+    },
+    "5e8fad46e3674ff88cd177ad2e6cb6c4": {
+      "model_name": "LinkModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "source": [
+          "IPY_MODEL_1a6f592bff414819a32769d4ee4e913c",
+          "value"
+        ],
+        "target": [
+          "IPY_MODEL_a7ecab8f5f2f4596993890fbee2b0c78",
+          "value"
+        ]
+      }
+    },
+    "fb643a5f0fd04b19a1bb44e27910eeb7": {
+      "model_name": "LinkModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "source": [
+          "IPY_MODEL_1a6f592bff414819a32769d4ee4e913c",
+          "value"
+        ],
+        "target": [
+          "IPY_MODEL_7d6822f89c064a2097b3d6822e282777",
+          "frame"
+        ]
+      }
+    },
+    "20d7bdedd1fd4deeab4c0bece9a8d91e": {
+      "model_name": "LinkModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "source": [
+          "IPY_MODEL_1a6f592bff414819a32769d4ee4e913c",
+          "max"
+        ],
+        "target": [
+          "IPY_MODEL_7d6822f89c064a2097b3d6822e282777",
+          "max_frame"
+        ]
+      }
+    },
+    "d38e739240ae4fab970c79e628951c05": {
+      "model_name": "LinkModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "source": [
+          "IPY_MODEL_a7ecab8f5f2f4596993890fbee2b0c78",
+          "max"
+        ],
+        "target": [
+          "IPY_MODEL_7d6822f89c064a2097b3d6822e282777",
+          "max_frame"
+        ]
+      }
+    },
+    "025cb41e49584b35be1a41fead77f9e6": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {
+        "width": "34px"
+      }
+    },
+    "f9be0605b5cf416f886c9300979870ad": {
+      "model_name": "ButtonStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "0db1af0fbe7846beb49217af1278e011": {
+      "model_name": "ButtonModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "icon": "compress",
+        "layout": "IPY_MODEL_025cb41e49584b35be1a41fead77f9e6",
+        "style": "IPY_MODEL_f9be0605b5cf416f886c9300979870ad"
+      }
+    },
+    "c3369751e610498aa562611c7523bcd5": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "8613deee125e4452b808a3163ace54b0": {
+      "model_name": "NGLModel",
+      "model_module": "nglview-js-widgets",
+      "model_module_version": "2.7.5",
+      "state": {
+        "_camera_orientation": [
+          39.25949225856016,
+          0,
+          0,
+          0,
+          0,
+          39.25949225856016,
+          0,
+          0,
+          0,
+          0,
+          39.25949225856016,
+          0,
+          -2.6550002098083496,
+          0.07805013656616211,
+          0.19564998149871826,
+          1
+        ],
+        "_dom_classes": [],
+        "_ibtn_fullscreen": "IPY_MODEL_c67c9d729e00442380f7773116439833",
+        "_igui": null,
+        "_iplayer": "IPY_MODEL_327acf97875c4baaa5da57228a678702",
+        "_ngl_color_dict": {},
+        "_ngl_coordinate_resource": {},
+        "_ngl_full_stage_parameters": {
+          "impostor": true,
+          "quality": "medium",
+          "workerDefault": true,
+          "sampleLevel": 0,
+          "backgroundColor": "white",
+          "rotateSpeed": 2,
+          "zoomSpeed": 1.2,
+          "panSpeed": 1,
+          "clipNear": 0,
+          "clipFar": 100,
+          "clipDist": 10,
+          "fogNear": 50,
+          "fogFar": 100,
+          "cameraFov": 40,
+          "cameraEyeSep": 0.3,
+          "cameraType": "perspective",
+          "lightColor": 14540253,
+          "lightIntensity": 1,
+          "ambientColor": 14540253,
+          "ambientIntensity": 0.2,
+          "hoverTimeout": 0,
+          "tooltip": true,
+          "mousePreset": "default"
+        },
+        "_ngl_msg_archive": [
+          {
+            "target": "Stage",
+            "type": "call_method",
+            "methodName": "loadFile",
+            "reconstruc_color_scheme": false,
+            "args": [
+              {
+                "type": "blob",
+                "data": "121304016\n  -OEChem-04272000333D\n\n 77 80  0     1  0  0  0  0  0999 V2000\n    0.7186    0.1097   -0.7666 P   0  0  1  0  0  0  0  0  0  0  0  0\n   -2.8379    2.0149   -0.7980 O   0  0  0  0  0  0  0  0  0  0  0  0\n   -4.6028    3.1073    2.1472 O   0  0  0  0  0  0  0  0  0  0  0  0\n   -3.3301    4.7557    0.3676 O   0  0  0  0  0  0  0  0  0  0  0  0\n   -0.0764    1.5219   -0.9343 O   0  0  0  0  0  0  0  0  0  0  0  0\n   -0.3889   -0.7774    0.0186 O   0  0  0  0  0  0  0  0  0  0  0  0\n    1.0570   -0.4658   -2.1188 O   0  0  0  0  0  0  0  0  0  0  0  0\n    5.5671    0.7854    0.0445 O   0  0  0  0  0  0  0  0  0  0  0  0\n    4.2564   -0.3904    1.5313 O   0  0  0  0  0  0  0  0  0  0  0  0\n   -3.9014   -0.5985   -0.5828 N   0  0  0  0  0  0  0  0  0  0  0  0\n   -3.3401   -0.3913   -1.7985 N   0  0  0  0  0  0  0  0  0  0  0  0\n    1.9784    0.3737    0.2767 N   0  0  0  0  0  0  0  0  0  0  0  0\n   -6.0695    2.9373   -1.0400 N   0  0  0  0  0  0  0  0  0  0  0  0\n   -3.4518   -2.7805   -2.0953 N   0  0  0  0  0  0  0  0  0  0  0  0\n   -4.3078   -4.2694   -0.5126 N   0  0  0  0  0  0  0  0  0  0  0  0\n   -3.9598    1.8429    0.1059 C   0  0  2  0  0  0  0  0  0  0  0  0\n   -3.5295    2.5821    1.3896 C   0  0  1  0  0  0  0  0  0  0  0  0\n   -2.5850    3.6571    0.8879 C   0  0  1  0  0  0  0  0  0  0  0  0\n   -1.8790    2.9446   -0.2531 C   0  0  1  0  0  0  0  0  0  0  0  0\n   -4.2179    0.3575    0.3466 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -0.6555    2.1555    0.1944 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -5.1418    2.4560   -0.5361 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -4.7681   -0.2807    1.4377 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -4.2422   -1.8355   -0.0999 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -4.7842   -1.6702    1.1562 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -3.9947   -2.9954   -0.9227 C   0  0  0  0  0  0  0  0  0  0  0  0\n    3.2285    0.9063   -0.2619 C   0  0  2  0  0  0  0  0  0  0  0  0\n   -3.1498   -1.4865   -2.4787 C   0  0  0  0  0  0  0  0  0  0  0  0\n    7.9923    0.9026    0.0299 C   0  0  0  0  0  0  0  0  0  0  0  0\n    6.7374    0.3342    0.7124 C   0  0  0  0  0  0  0  0  0  0  0  0\n    8.0198    0.6129   -1.4875 C   0  0  0  0  0  0  0  0  0  0  0  0\n    9.2469    0.4225    0.7855 C   0  0  0  0  0  0  0  0  0  0  0  0\n    4.3740    0.3454    0.5599 C   0  0  0  0  0  0  0  0  0  0  0  0\n    3.2118    2.4272   -0.1933 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -0.1809   -2.0233    0.5458 C   0  0  0  0  0  0  0  0  0  0  0  0\n    8.0925   -0.8605   -1.8640 C   0  0  0  0  0  0  0  0  0  0  0  0\n   10.5473    1.0069    0.2529 C   0  0  0  0  0  0  0  0  0  0  0  0\n    0.7452   -2.8841   -0.0430 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -0.8951   -2.4321    1.6719 C   0  0  0  0  0  0  0  0  0  0  0  0\n    0.9573   -4.1539    0.4943 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -0.6833   -3.7016    2.2094 C   0  0  0  0  0  0  0  0  0  0  0  0\n    0.2429   -4.5626    1.6206 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -2.9642    1.9036    2.0422 H   0  0  0  0  0  0  0  0  0  0  0  0\n   -1.9191    4.0437    1.6648 H   0  0  0  0  0  0  0  0  0  0  0  0\n   -1.6048    3.6259   -1.0662 H   0  0  0  0  0  0  0  0  0  0  0  0\n   -0.9271    1.4059    0.9431 H   0  0  0  0  0  0  0  0  0  0  0  0\n    0.0909    2.8247    0.6336 H   0  0  0  0  0  0  0  0  0  0  0  0\n   -4.2202    3.6255    2.8757 H   0  0  0  0  0  0  0  0  0  0  0  0\n   -5.1236    0.1960    2.3406 H   0  0  0  0  0  0  0  0  0  0  0  0\n   -2.6918    5.3952    0.0082 H   0  0  0  0  0  0  0  0  0  0  0  0\n   -5.1510   -2.4561    1.8015 H   0  0  0  0  0  0  0  0  0  0  0  0\n    1.7708    0.7949    1.1813 H   0  0  0  0  0  0  0  0  0  0  0  0\n    3.3723    0.5621   -1.2919 H   0  0  0  0  0  0  0  0  0  0  0  0\n    7.9399    1.9966    0.1238 H   0  0  0  0  0  0  0  0  0  0  0  0\n   -2.6946   -1.3865   -3.4777 H   0  0  0  0  0  0  0  0  0  0  0  0\n    6.7045    0.6747    1.7549 H   0  0  0  0  0  0  0  0  0  0  0  0\n    6.7610   -0.7620    0.7101 H   0  0  0  0  0  0  0  0  0  0  0  0\n    9.1542    0.7095    1.8408 H   0  0  0  0  0  0  0  0  0  0  0  0\n    8.8686    1.1346   -1.9447 H   0  0  0  0  0  0  0  0  0  0  0  0\n    9.3103   -0.6717    0.7694 H   0  0  0  0  0  0  0  0  0  0  0  0\n    7.1273    1.0459   -1.9560 H   0  0  0  0  0  0  0  0  0  0  0  0\n   -4.7270   -4.4563    0.3921 H   0  0  0  0  0  0  0  0  0  0  0  0\n   -4.1231   -5.0683   -1.1097 H   0  0  0  0  0  0  0  0  0  0  0  0\n    2.3796    2.8423   -0.7710 H   0  0  0  0  0  0  0  0  0  0  0  0\n    4.1351    2.8501   -0.6042 H   0  0  0  0  0  0  0  0  0  0  0  0\n    3.1247    2.7840    0.8396 H   0  0  0  0  0  0  0  0  0  0  0  0\n   10.7761    0.6329   -0.7491 H   0  0  0  0  0  0  0  0  0  0  0  0\n    7.2246   -1.4136   -1.4938 H   0  0  0  0  0  0  0  0  0  0  0  0\n   11.3795    0.7252    0.9063 H   0  0  0  0  0  0  0  0  0  0  0  0\n   10.5016    2.0998    0.2157 H   0  0  0  0  0  0  0  0  0  0  0  0\n    8.9988   -1.3317   -1.4733 H   0  0  0  0  0  0  0  0  0  0  0  0\n    8.1096   -0.9648   -2.9539 H   0  0  0  0  0  0  0  0  0  0  0  0\n    1.3138   -2.6045   -0.9221 H   0  0  0  0  0  0  0  0  0  0  0  0\n   -1.6149   -1.7641    2.1367 H   0  0  0  0  0  0  0  0  0  0  0  0\n    1.6773   -4.8251    0.0353 H   0  0  0  0  0  0  0  0  0  0  0  0\n   -1.2394   -4.0195    3.0864 H   0  0  0  0  0  0  0  0  0  0  0  0\n    0.4075   -5.5513    2.0388 H   0  0  0  0  0  0  0  0  0  0  0  0\n  1  5  1  0  0  0  0\n  1  6  1  0  0  0  0\n  1  7  2  0  0  0  0\n  1 12  1  0  0  0  0\n  2 16  1  0  0  0  0\n  2 19  1  0  0  0  0\n  3 17  1  0  0  0  0\n  3 48  1  0  0  0  0\n  4 18  1  0  0  0  0\n  4 50  1  0  0  0  0\n  5 21  1  0  0  0  0\n  6 35  1  0  0  0  0\n  8 30  1  0  0  0  0\n  8 33  1  0  0  0  0\n  9 33  2  0  0  0  0\n 10 11  1  0  0  0  0\n 10 20  1  0  0  0  0\n 10 24  1  0  0  0  0\n 11 28  2  0  0  0  0\n 12 27  1  0  0  0  0\n 12 52  1  0  0  0  0\n 13 22  3  0  0  0  0\n 14 26  2  0  0  0  0\n 14 28  1  0  0  0  0\n 15 26  1  0  0  0  0\n 15 62  1  0  0  0  0\n 15 63  1  0  0  0  0\n 16 17  1  0  0  0  0\n 16 20  1  0  0  0  0\n 16 22  1  0  0  0  0\n 17 18  1  0  0  0  0\n 17 43  1  0  0  0  0\n 18 19  1  0  0  0  0\n 18 44  1  0  0  0  0\n 19 21  1  0  0  0  0\n 19 45  1  0  0  0  0\n 20 23  2  0  0  0  0\n 21 46  1  0  0  0  0\n 21 47  1  0  0  0  0\n 23 25  1  0  0  0  0\n 23 49  1  0  0  0  0\n 24 25  2  0  0  0  0\n 24 26  1  0  0  0  0\n 25 51  1  0  0  0  0\n 27 33  1  0  0  0  0\n 27 34  1  0  0  0  0\n 27 53  1  0  0  0  0\n 28 55  1  0  0  0  0\n 29 30  1  0  0  0  0\n 29 31  1  0  0  0  0\n 29 32  1  0  0  0  0\n 29 54  1  0  0  0  0\n 30 56  1  0  0  0  0\n 30 57  1  0  0  0  0\n 31 36  1  0  0  0  0\n 31 59  1  0  0  0  0\n 31 61  1  0  0  0  0\n 32 37  1  0  0  0  0\n 32 58  1  0  0  0  0\n 32 60  1  0  0  0  0\n 34 64  1  0  0  0  0\n 34 65  1  0  0  0  0\n 34 66  1  0  0  0  0\n 35 38  2  0  0  0  0\n 35 39  1  0  0  0  0\n 36 68  1  0  0  0  0\n 36 71  1  0  0  0  0\n 36 72  1  0  0  0  0\n 37 67  1  0  0  0  0\n 37 69  1  0  0  0  0\n 37 70  1  0  0  0  0\n 38 40  1  0  0  0  0\n 38 73  1  0  0  0  0\n 39 41  2  0  0  0  0\n 39 74  1  0  0  0  0\n 40 42  2  0  0  0  0\n 40 75  1  0  0  0  0\n 41 42  1  0  0  0  0\n 41 76  1  0  0  0  0\n 42 77  1  0  0  0  0\nM  END\n> <PUBCHEM_COMPOUND_CID>\n121304016\n\n> <PUBCHEM_CONFORMER_RMSD>\n1.4\n\n> <PUBCHEM_CONFORMER_DIVERSEORDER>\n1\n131\n148\n102\n68\n105\n12\n61\n57\n10\n134\n65\n42\n46\n40\n82\n121\n79\n3\n140\n157\n104\n28\n152\n23\n108\n20\n98\n86\n94\n153\n156\n35\n69\n167\n135\n129\n85\n95\n151\n55\n62\n113\n13\n141\n143\n59\n34\n114\n163\n91\n87\n99\n66\n142\n33\n15\n7\n159\n126\n75\n111\n92\n64\n4\n70\n76\n112\n83\n96\n37\n127\n80\n109\n133\n161\n78\n5\n93\n30\n164\n101\n158\n88\n138\n155\n24\n51\n132\n63\n77\n146\n53\n14\n136\n29\n103\n2\n45\n115\n166\n39\n147\n128\n49\n125\n116\n38\n58\n60\n122\n119\n74\n160\n123\n31\n107\n84\n90\n162\n27\n118\n165\n18\n54\n124\n8\n72\n17\n11\n120\n6\n106\n73\n97\n137\n48\n21\n130\n9\n36\n56\n89\n67\n47\n43\n50\n44\n139\n32\n150\n52\n16\n22\n144\n26\n100\n117\n154\n41\n110\n145\n71\n25\n81\n149\n19\n\n> <PUBCHEM_MMFF94_PARTIAL_CHARGES>\n49\n1 1.51\n10 0.51\n11 -0.65\n12 -0.9\n13 -0.56\n14 -0.66\n15 -0.85\n16 0.66\n17 0.28\n18 0.28\n19 0.28\n2 -0.56\n20 -0.33\n21 0.28\n22 0.36\n23 -0.15\n24 -0.24\n25 -0.15\n26 0.58\n27 0.33\n28 0.6\n3 -0.68\n30 0.28\n33 0.66\n35 0.08\n38 -0.15\n39 -0.15\n4 -0.68\n40 -0.15\n41 -0.15\n42 -0.15\n48 0.4\n49 0.15\n5 -0.55\n50 0.4\n51 0.15\n52 0.36\n55 0.06\n6 -0.35\n62 0.4\n63 0.4\n7 -0.7\n73 0.15\n74 0.15\n75 0.15\n76 0.15\n77 0.15\n8 -0.43\n9 -0.57\n\n> <PUBCHEM_EFFECTIVE_ROTOR_COUNT>\n15\n\n> <PUBCHEM_PHARMACOPHORE_FEATURES>\n17\n1 13 acceptor\n1 15 donor\n1 2 acceptor\n1 3 acceptor\n1 3 donor\n1 36 hydrophobe\n1 37 hydrophobe\n1 4 acceptor\n1 4 donor\n1 7 acceptor\n1 9 acceptor\n3 11 14 28 cation\n3 14 15 26 cation\n5 10 20 23 24 25 rings\n5 2 16 17 18 19 rings\n6 10 11 14 24 26 28 rings\n6 35 38 39 40 41 42 rings\n\n> <PUBCHEM_HEAVY_ATOM_COUNT>\n42\n\n> <PUBCHEM_ATOM_DEF_STEREO_COUNT>\n6\n\n> <PUBCHEM_ATOM_UDEF_STEREO_COUNT>\n0\n\n> <PUBCHEM_BOND_DEF_STEREO_COUNT>\n0\n\n> <PUBCHEM_BOND_UDEF_STEREO_COUNT>\n0\n\n> <PUBCHEM_ISOTOPIC_ATOM_COUNT>\n0\n\n> <PUBCHEM_COMPONENT_COUNT>\n1\n\n> <PUBCHEM_CACTVS_TAUTO_COUNT>\n6\n\n> <PUBCHEM_CONFORMER_ID>\n073AF3D000000001\n\n> <PUBCHEM_MMFF94_ENERGY>\n79.8902\n\n> <PUBCHEM_FEATURE_SELFOVERLAP>\n86.519\n\n> <PUBCHEM_SHAPE_FINGERPRINT>\n10462385 53 18130797772172989646\n11007060 377 18412270515157351184\n11136131 41 18041837291239182498\n12104220 1 18336543919146523426\n14279260 333 18411414017021590766\n14340393 34 17560815298998090150\n14725015 67 18192713565244690411\n14856354 85 18340771562630212415\n15021287 119 16732704978280635668\n15183329 4 17968365854101714058\n15361156 5 18197782305437820108\n16112460 7 18259698978925978506\n19304152 47 18116165388998083889\n19311894 1 18126840732096951383\n20775438 99 16324815043663056839\n3383291 50 18335982077690784482\n469060 322 18190202194819114153\n9896288 288 18341625785044793457\n\n> <PUBCHEM_SHAPE_MULTIPOLES>\n791.35\n21.13\n5.68\n1.86\n70.33\n2.12\n0.38\n-9.39\n1.8\n-9.67\n-1.84\n-0.97\n1\n-1.21\n\n> <PUBCHEM_SHAPE_SELFOVERLAP>\n1654.563\n\n> <PUBCHEM_SHAPE_VOLUME>\n449.4\n\n> <PUBCHEM_COORDINATE_TYPE>\n2\n5\n10\n\n$$$$\n",
+                "binary": false
+              }
+            ],
+            "kwargs": {
+              "defaultRepresentation": true,
+              "ext": "sdf"
+            }
+          },
+          {
+            "target": "Widget",
+            "type": "call_method",
+            "methodName": "setSize",
+            "reconstruc_color_scheme": false,
+            "args": [
+              "300px",
+              "300px"
+            ],
+            "kwargs": {}
+          }
+        ],
+        "_ngl_original_stage_parameters": {
+          "impostor": true,
+          "quality": "medium",
+          "workerDefault": true,
+          "sampleLevel": 0,
+          "backgroundColor": "white",
+          "rotateSpeed": 2,
+          "zoomSpeed": 1.2,
+          "panSpeed": 1,
+          "clipNear": 0,
+          "clipFar": 100,
+          "clipDist": 10,
+          "fogNear": 50,
+          "fogFar": 100,
+          "cameraFov": 40,
+          "cameraEyeSep": 0.3,
+          "cameraType": "perspective",
+          "lightColor": 14540253,
+          "lightIntensity": 1,
+          "ambientColor": 14540253,
+          "ambientIntensity": 0.2,
+          "hoverTimeout": 0,
+          "tooltip": true,
+          "mousePreset": "default"
+        },
+        "_ngl_repr_dict": {
+          "0": {
+            "0": {
+              "type": "ball+stick",
+              "params": {
+                "lazy": false,
+                "visible": true,
+                "quality": "high",
+                "sphereDetail": 2,
+                "radialSegments": 20,
+                "openEnded": true,
+                "disableImpostor": false,
+                "aspectRatio": 1.5,
+                "lineOnly": false,
+                "cylinderOnly": false,
+                "multipleBond": "off",
+                "bondScale": 0.3,
+                "bondSpacing": 0.75,
+                "linewidth": 2,
+                "radiusType": "size",
+                "radiusData": {},
+                "radiusSize": 0.15,
+                "radiusScale": 2,
+                "assembly": "default",
+                "defaultAssembly": "",
+                "clipNear": 0,
+                "clipRadius": 0,
+                "clipCenter": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "flatShaded": false,
+                "opacity": 1,
+                "depthWrite": true,
+                "side": "double",
+                "wireframe": false,
+                "colorScheme": "element",
+                "colorScale": "",
+                "colorReverse": false,
+                "colorValue": 9474192,
+                "colorMode": "hcl",
+                "roughness": 0.4,
+                "metalness": 0,
+                "diffuse": 16777215,
+                "diffuseInterior": false,
+                "useInteriorColor": true,
+                "interiorColor": 2236962,
+                "interiorDarkening": 0,
+                "matrix": {
+                  "elements": [
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                "disablePicking": false,
+                "sele": ""
+              }
+            }
+          }
+        },
+        "_ngl_version": "2.0.0-dev.36",
+        "_ngl_view_id": [
+          "FF6EDC1F-AE16-454C-917D-9217D5BB4032"
+        ],
+        "_player_dict": {},
+        "_scene_position": {},
+        "_scene_rotation": {},
+        "_synced_model_ids": [],
+        "_synced_repr_model_ids": [],
+        "layout": "IPY_MODEL_c3369751e610498aa562611c7523bcd5",
+        "n_components": 1,
+        "picked": {}
+      }
+    },
+    "9e6859a596644591af1ffa1af6447903": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "eafa0fa92c854cb2a5bc319abd94fa86": {
+      "model_name": "ImageModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_9e6859a596644591af1ffa1af6447903",
+        "width": "900.0"
+      }
+    },
+    "1368bcc056544b8f8bc38abbff71034e": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "e3bb1104eb364f1ba0f1fa7a8a2669aa": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "de7fadf4826b42d09bc31e7b0d272071": {
+      "model_name": "PlayModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_1368bcc056544b8f8bc38abbff71034e",
+        "max": 0,
+        "style": "IPY_MODEL_e3bb1104eb364f1ba0f1fa7a8a2669aa"
+      }
+    },
+    "213eee12f1c048f6a1ffa3d33ce2cc7d": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "8ae3d72db1eb4684856290ba644a3d5e": {
+      "model_name": "SliderStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "bf489049dab84d1090d0a00176b4fcc2": {
+      "model_name": "IntSliderModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_213eee12f1c048f6a1ffa3d33ce2cc7d",
+        "max": 0,
+        "style": "IPY_MODEL_8ae3d72db1eb4684856290ba644a3d5e"
+      }
+    },
+    "12c9b3951fb6499b94d0a82a20010c64": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "327acf97875c4baaa5da57228a678702": {
+      "model_name": "HBoxModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "children": [
+          "IPY_MODEL_de7fadf4826b42d09bc31e7b0d272071",
+          "IPY_MODEL_bf489049dab84d1090d0a00176b4fcc2"
+        ],
+        "layout": "IPY_MODEL_12c9b3951fb6499b94d0a82a20010c64"
+      }
+    },
+    "a47043b3fc894b159c3a14c80e4f0201": {
+      "model_name": "LinkModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "source": [
+          "IPY_MODEL_de7fadf4826b42d09bc31e7b0d272071",
+          "value"
+        ],
+        "target": [
+          "IPY_MODEL_bf489049dab84d1090d0a00176b4fcc2",
+          "value"
+        ]
+      }
+    },
+    "00bcfabf3f24427d829fe212f4fcc9f8": {
+      "model_name": "LinkModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "source": [
+          "IPY_MODEL_de7fadf4826b42d09bc31e7b0d272071",
+          "value"
+        ],
+        "target": [
+          "IPY_MODEL_8613deee125e4452b808a3163ace54b0",
+          "frame"
+        ]
+      }
+    },
+    "2de83ea8a2134934a076a4e4fb1b2083": {
+      "model_name": "LinkModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "source": [
+          "IPY_MODEL_de7fadf4826b42d09bc31e7b0d272071",
+          "max"
+        ],
+        "target": [
+          "IPY_MODEL_8613deee125e4452b808a3163ace54b0",
+          "max_frame"
+        ]
+      }
+    },
+    "00625924890c4971abc96c3dd05d8c1c": {
+      "model_name": "LinkModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "source": [
+          "IPY_MODEL_bf489049dab84d1090d0a00176b4fcc2",
+          "max"
+        ],
+        "target": [
+          "IPY_MODEL_8613deee125e4452b808a3163ace54b0",
+          "max_frame"
+        ]
+      }
+    },
+    "ce32d90653ba41be9e9fc80b570a7429": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {
+        "width": "34px"
+      }
+    },
+    "ce86e4c6220a418cbbf2d61a2e91bc88": {
+      "model_name": "ButtonStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "c67c9d729e00442380f7773116439833": {
+      "model_name": "ButtonModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "icon": "compress",
+        "layout": "IPY_MODEL_ce32d90653ba41be9e9fc80b570a7429",
+        "style": "IPY_MODEL_ce86e4c6220a418cbbf2d61a2e91bc88"
+      }
+    },
+    "9b48b6bdcac541f19adacc8d04b35d32": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "a8f7ee17ef194ad0861854ada20863f4": {
+      "model_name": "NGLModel",
+      "model_module": "nglview-js-widgets",
+      "model_module_version": "2.7.5",
+      "state": {
+        "_camera_orientation": [
+          27.867431936649233,
+          0,
+          0,
+          0,
+          0,
+          27.867431936649233,
+          0,
+          0,
+          0,
+          0,
+          27.867431936649233,
+          0,
+          0.7098500728607178,
+          -0.11814999580383301,
+          -0.07875001430511475,
+          1
+        ],
+        "_dom_classes": [],
+        "_ibtn_fullscreen": "IPY_MODEL_4a19595835644aac935d96e2ef6139bb",
+        "_igui": null,
+        "_iplayer": "IPY_MODEL_ceb218fd6f444d88937945a0177db10d",
+        "_ngl_color_dict": {},
+        "_ngl_coordinate_resource": {},
+        "_ngl_full_stage_parameters": {
+          "impostor": true,
+          "quality": "medium",
+          "workerDefault": true,
+          "sampleLevel": 0,
+          "backgroundColor": "white",
+          "rotateSpeed": 2,
+          "zoomSpeed": 1.2,
+          "panSpeed": 1,
+          "clipNear": 0,
+          "clipFar": 100,
+          "clipDist": 10,
+          "fogNear": 50,
+          "fogFar": 100,
+          "cameraFov": 40,
+          "cameraEyeSep": 0.3,
+          "cameraType": "perspective",
+          "lightColor": 14540253,
+          "lightIntensity": 1,
+          "ambientColor": 14540253,
+          "ambientIntensity": 0.2,
+          "hoverTimeout": 0,
+          "tooltip": true,
+          "mousePreset": "default"
+        },
+        "_ngl_msg_archive": [
+          {
+            "target": "Stage",
+            "type": "call_method",
+            "methodName": "loadFile",
+            "reconstruc_color_scheme": false,
+            "args": [
+              {
+                "type": "blob",
+                "data": "10445549\n  -OEChem-04272000403D\n\n 34 36  0     1  0  0  0  0  0999 V2000\n    2.4471    2.2443    1.2240 O   0  0  0  0  0  0  0  0  0  0  0  0\n    3.5333   -0.0916    1.9376 O   0  0  0  0  0  0  0  0  0  0  0  0\n    3.7302   -1.7323   -2.1406 O   0  0  0  0  0  0  0  0  0  0  0  0\n    1.6620    0.0358   -1.1329 N   0  0  0  0  0  0  0  0  0  0  0  0\n   -2.5752    1.5217   -0.9424 N   0  0  0  0  0  0  0  0  0  0  0  0\n   -0.8875   -1.1079    0.6843 N   0  0  0  0  0  0  0  0  0  0  0  0\n   -3.2557   -1.6619    0.7747 N   0  0  0  0  0  0  0  0  0  0  0  0\n   -4.9324   -0.2407   -0.1734 N   0  0  0  0  0  0  0  0  0  0  0  0\n    1.0550    1.1684   -0.4099 C   0  0  2  0  0  0  0  0  0  0  0  0\n    1.6171    1.1016    1.0208 C   0  0  1  0  0  0  0  0  0  0  0  0\n    2.8884   -0.3164   -0.4125 C   0  0  1  0  0  0  0  0  0  0  0  0\n    2.4463   -0.1812    1.0382 C   0  0  1  0  0  0  0  0  0  0  0  0\n   -0.4441    1.0653   -0.4907 C   0  0  0  0  0  0  0  0  0  0  0  0\n    3.3550   -1.7177   -0.7745 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -1.2469    0.0186    0.0208 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -1.2887    1.9792   -1.0797 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -2.5723    0.3249   -0.2731 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -3.5878   -0.5325    0.1124 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -1.9436   -1.8776    1.0170 C   0  0  0  0  0  0  0  0  0  0  0  0\n    1.3732    2.0951   -0.9053 H   0  0  0  0  0  0  0  0  0  0  0  0\n    0.8623    1.0931    1.8140 H   0  0  0  0  0  0  0  0  0  0  0  0\n    3.6804    0.4024   -0.6605 H   0  0  0  0  0  0  0  0  0  0  0  0\n    1.8219   -1.0348    1.3304 H   0  0  0  0  0  0  0  0  0  0  0  0\n    1.0343   -0.7686   -1.1134 H   0  0  0  0  0  0  0  0  0  0  0  0\n    2.5796   -2.4748   -0.6125 H   0  0  0  0  0  0  0  0  0  0  0  0\n    4.2295   -1.9991   -0.1795 H   0  0  0  0  0  0  0  0  0  0  0  0\n   -1.0939    2.9150   -1.5850 H   0  0  0  0  0  0  0  0  0  0  0  0\n    1.8735    3.0288    1.1881 H   0  0  0  0  0  0  0  0  0  0  0  0\n    3.1677    0.0946    2.8192 H   0  0  0  0  0  0  0  0  0  0  0  0\n   -3.3988    1.9976   -1.2844 H   0  0  0  0  0  0  0  0  0  0  0  0\n    2.9483   -1.4815   -2.6617 H   0  0  0  0  0  0  0  0  0  0  0  0\n   -1.7093   -2.7925    1.5503 H   0  0  0  0  0  0  0  0  0  0  0  0\n   -5.6492   -0.8892    0.1231 H   0  0  0  0  0  0  0  0  0  0  0  0\n   -5.1843    0.6036   -0.6686 H   0  0  0  0  0  0  0  0  0  0  0  0\n  1 10  1  0  0  0  0\n  1 28  1  0  0  0  0\n  2 12  1  0  0  0  0\n  2 29  1  0  0  0  0\n  3 14  1  0  0  0  0\n  3 31  1  0  0  0  0\n  4  9  1  0  0  0  0\n  4 11  1  0  0  0  0\n  4 24  1  0  0  0  0\n  5 16  1  0  0  0  0\n  5 17  1  0  0  0  0\n  5 30  1  0  0  0  0\n  6 15  1  0  0  0  0\n  6 19  2  0  0  0  0\n  7 18  2  0  0  0  0\n  7 19  1  0  0  0  0\n  8 18  1  0  0  0  0\n  8 33  1  0  0  0  0\n  8 34  1  0  0  0  0\n  9 10  1  0  0  0  0\n  9 13  1  0  0  0  0\n  9 20  1  0  0  0  0\n 10 12  1  0  0  0  0\n 10 21  1  0  0  0  0\n 11 12  1  0  0  0  0\n 11 14  1  0  0  0  0\n 11 22  1  0  0  0  0\n 12 23  1  0  0  0  0\n 13 15  1  0  0  0  0\n 13 16  2  0  0  0  0\n 14 25  1  0  0  0  0\n 14 26  1  0  0  0  0\n 15 17  2  0  0  0  0\n 16 27  1  0  0  0  0\n 17 18  1  0  0  0  0\n 19 32  1  0  0  0  0\nM  END\n> <PUBCHEM_COMPOUND_CID>\n10445549\n\n> <PUBCHEM_CONFORMER_RMSD>\n0.6\n\n> <PUBCHEM_CONFORMER_DIVERSEORDER>\n3\n9\n16\n5\n12\n1\n11\n2\n13\n10\n15\n14\n4\n6\n7\n8\n\n> <PUBCHEM_MMFF94_PARTIAL_CHARGES>\n28\n1 -0.68\n10 0.28\n11 0.27\n12 0.28\n13 -0.18\n14 0.28\n15 0.26\n16 -0.3\n17 -0.15\n18 0.41\n19 0.47\n2 -0.68\n24 0.36\n27 0.15\n28 0.4\n29 0.4\n3 -0.68\n30 0.27\n31 0.4\n32 0.15\n33 0.4\n34 0.4\n4 -0.9\n5 0.03\n6 -0.57\n7 -0.62\n8 -0.9\n9 0.45\n\n> <PUBCHEM_EFFECTIVE_ROTOR_COUNT>\n3\n\n> <PUBCHEM_PHARMACOPHORE_FEATURES>\n16\n1 1 acceptor\n1 1 donor\n1 2 acceptor\n1 2 donor\n1 3 acceptor\n1 3 donor\n1 4 cation\n1 4 donor\n1 5 cation\n1 5 donor\n1 8 donor\n3 6 7 19 cation\n3 7 8 18 cation\n5 4 9 10 11 12 rings\n5 5 13 15 16 17 rings\n6 6 7 15 17 18 19 rings\n\n> <PUBCHEM_HEAVY_ATOM_COUNT>\n19\n\n> <PUBCHEM_ATOM_DEF_STEREO_COUNT>\n4\n\n> <PUBCHEM_ATOM_UDEF_STEREO_COUNT>\n0\n\n> <PUBCHEM_BOND_DEF_STEREO_COUNT>\n0\n\n> <PUBCHEM_BOND_UDEF_STEREO_COUNT>\n0\n\n> <PUBCHEM_ISOTOPIC_ATOM_COUNT>\n0\n\n> <PUBCHEM_COMPONENT_COUNT>\n1\n\n> <PUBCHEM_CACTVS_TAUTO_COUNT>\n5\n\n> <PUBCHEM_CONFORMER_ID>\n009F62ED00000003\n\n> <PUBCHEM_MMFF94_ENERGY>\n40.2317\n\n> <PUBCHEM_FEATURE_SELFOVERLAP>\n81.448\n\n> <PUBCHEM_SHAPE_FINGERPRINT>\n10465860 71 17894925026289012134\n10618630 7 17967808392446246233\n11471102 22 17703782613929325784\n11543360 7 13695872566782308555\n11578080 2 14617943749193936379\n11582403 64 16395409896098287792\n11640471 11 15051442894550993376\n12202030 40 18343590620375519254\n12236239 1 16443062777237076314\n12403814 3 15267337414824666241\n12553582 1 17967820452814568723\n13296908 3 18272086059195610972\n13533116 47 17989212581478855219\n13538477 17 17240201057863952955\n13544592 145 18411422795638961143\n14022347 108 17821731650078388225\n14115302 16 16370718257745422328\n14289901 80 17560518516493555265\n14386348 63 18342460318217115814\n15848700 24 18336261331941919543\n16752209 62 17749381534465691701\n16945 1 18113893828070920237\n17804303 29 18334290929336688449\n19049666 15 18269548343330104512\n19422 9 16153991235903645404\n19862831 5 15864072078473957451\n20510252 161 18336256878035115769\n20645476 183 16226341394782623603\n20645477 70 18201997746254483295\n20871999 31 18115041705314640118\n20905425 154 18046339726075593023\n21197605 99 12205223301336457386\n23175994 123 17916598526876868902\n232386 152 17821996619411072666\n23526113 38 18199465463917926814\n23557571 272 18334852814376110452\n23559900 14 18335425681318951556\n23598291 2 16081929205259485524\n2748010 2 18188490310442397511\n31174 14 17988641930052960136\n3286 77 17917998260786814127\n4340502 62 16487259898396106927\n474 4 15624793150123971682\n6049 1 18341892970022088908\n7364860 26 18190468357520437540\n77492 1 16443064958980398388\n81228 2 18186802482964191809\n9709674 26 18410290358633716415\n\n> <PUBCHEM_SHAPE_MULTIPOLES>\n348.5\n7.27\n2.07\n1.46\n1.96\n0.13\n0.06\n-2.81\n0.52\n0.1\n0.07\n-1.87\n-0.18\n1.81\n\n> <PUBCHEM_SHAPE_SELFOVERLAP>\n759.516\n\n> <PUBCHEM_SHAPE_VOLUME>\n188.3\n\n> <PUBCHEM_COORDINATE_TYPE>\n2\n5\n10\n\n$$$$\n",
+                "binary": false
+              }
+            ],
+            "kwargs": {
+              "defaultRepresentation": true,
+              "ext": "sdf"
+            }
+          },
+          {
+            "target": "Widget",
+            "type": "call_method",
+            "methodName": "setSize",
+            "reconstruc_color_scheme": false,
+            "args": [
+              "300px",
+              "300px"
+            ],
+            "kwargs": {}
+          }
+        ],
+        "_ngl_original_stage_parameters": {
+          "impostor": true,
+          "quality": "medium",
+          "workerDefault": true,
+          "sampleLevel": 0,
+          "backgroundColor": "white",
+          "rotateSpeed": 2,
+          "zoomSpeed": 1.2,
+          "panSpeed": 1,
+          "clipNear": 0,
+          "clipFar": 100,
+          "clipDist": 10,
+          "fogNear": 50,
+          "fogFar": 100,
+          "cameraFov": 40,
+          "cameraEyeSep": 0.3,
+          "cameraType": "perspective",
+          "lightColor": 14540253,
+          "lightIntensity": 1,
+          "ambientColor": 14540253,
+          "ambientIntensity": 0.2,
+          "hoverTimeout": 0,
+          "tooltip": true,
+          "mousePreset": "default"
+        },
+        "_ngl_repr_dict": {
+          "0": {
+            "0": {
+              "type": "ball+stick",
+              "params": {
+                "lazy": false,
+                "visible": true,
+                "quality": "high",
+                "sphereDetail": 2,
+                "radialSegments": 20,
+                "openEnded": true,
+                "disableImpostor": false,
+                "aspectRatio": 1.5,
+                "lineOnly": false,
+                "cylinderOnly": false,
+                "multipleBond": "off",
+                "bondScale": 0.3,
+                "bondSpacing": 0.75,
+                "linewidth": 2,
+                "radiusType": "size",
+                "radiusData": {},
+                "radiusSize": 0.15,
+                "radiusScale": 2,
+                "assembly": "default",
+                "defaultAssembly": "",
+                "clipNear": 0,
+                "clipRadius": 0,
+                "clipCenter": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "flatShaded": false,
+                "opacity": 1,
+                "depthWrite": true,
+                "side": "double",
+                "wireframe": false,
+                "colorScheme": "element",
+                "colorScale": "",
+                "colorReverse": false,
+                "colorValue": 9474192,
+                "colorMode": "hcl",
+                "roughness": 0.4,
+                "metalness": 0,
+                "diffuse": 16777215,
+                "diffuseInterior": false,
+                "useInteriorColor": true,
+                "interiorColor": 2236962,
+                "interiorDarkening": 0,
+                "matrix": {
+                  "elements": [
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                "disablePicking": false,
+                "sele": ""
+              }
+            }
+          }
+        },
+        "_ngl_version": "2.0.0-dev.36",
+        "_ngl_view_id": [
+          "3A7E4BBC-0AD8-40EB-978C-35C060A3A4D9"
+        ],
+        "_player_dict": {},
+        "_scene_position": {},
+        "_scene_rotation": {},
+        "_synced_model_ids": [],
+        "_synced_repr_model_ids": [],
+        "layout": "IPY_MODEL_9b48b6bdcac541f19adacc8d04b35d32",
+        "n_components": 1,
+        "picked": {}
+      }
+    },
+    "0fb42d6d4f08491087f8999d71f2d501": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "22e8b660a6e04c43910653022022959d": {
+      "model_name": "ImageModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_0fb42d6d4f08491087f8999d71f2d501",
+        "width": "900.0"
+      }
+    },
+    "c0d8d3b0c313442089e161188e97cc54": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "b0884a4fc0ab4f75858a14e5c3a47888": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "712763691c534db99ab3ffc232b583cf": {
+      "model_name": "PlayModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_c0d8d3b0c313442089e161188e97cc54",
+        "max": 0,
+        "style": "IPY_MODEL_b0884a4fc0ab4f75858a14e5c3a47888"
+      }
+    },
+    "3daf3c093df64e8ea5227f199d7de466": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "79342d8095554e0f8267fcce62fc700b": {
+      "model_name": "SliderStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "c177baa01bd84ecaa5ff2ecfd5a1c7cc": {
+      "model_name": "IntSliderModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_3daf3c093df64e8ea5227f199d7de466",
+        "max": 0,
+        "style": "IPY_MODEL_79342d8095554e0f8267fcce62fc700b"
+      }
+    },
+    "c7848624dcbf4f6b941544ad674b6acc": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "ceb218fd6f444d88937945a0177db10d": {
+      "model_name": "HBoxModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "children": [
+          "IPY_MODEL_712763691c534db99ab3ffc232b583cf",
+          "IPY_MODEL_c177baa01bd84ecaa5ff2ecfd5a1c7cc"
+        ],
+        "layout": "IPY_MODEL_c7848624dcbf4f6b941544ad674b6acc"
+      }
+    },
+    "7d57fdbcab7d4637aa65cb382e1ee20c": {
+      "model_name": "LinkModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "source": [
+          "IPY_MODEL_712763691c534db99ab3ffc232b583cf",
+          "value"
+        ],
+        "target": [
+          "IPY_MODEL_c177baa01bd84ecaa5ff2ecfd5a1c7cc",
+          "value"
+        ]
+      }
+    },
+    "0cc703109f194c49b1ee50196f18e0e9": {
+      "model_name": "LinkModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "source": [
+          "IPY_MODEL_712763691c534db99ab3ffc232b583cf",
+          "value"
+        ],
+        "target": [
+          "IPY_MODEL_a8f7ee17ef194ad0861854ada20863f4",
+          "frame"
+        ]
+      }
+    },
+    "cd80f9620582423ca15f01cbeb29dde7": {
+      "model_name": "LinkModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "source": [
+          "IPY_MODEL_712763691c534db99ab3ffc232b583cf",
+          "max"
+        ],
+        "target": [
+          "IPY_MODEL_a8f7ee17ef194ad0861854ada20863f4",
+          "max_frame"
+        ]
+      }
+    },
+    "fc66e47b0f6f4b168c0cc9b1ee052f13": {
+      "model_name": "LinkModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "source": [
+          "IPY_MODEL_c177baa01bd84ecaa5ff2ecfd5a1c7cc",
+          "max"
+        ],
+        "target": [
+          "IPY_MODEL_a8f7ee17ef194ad0861854ada20863f4",
+          "max_frame"
+        ]
+      }
+    },
+    "8d4debda505c47629fefc5b229a8430c": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {
+        "width": "34px"
+      }
+    },
+    "fc36bde1c6a746a28932879b5895f833": {
+      "model_name": "ButtonStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "4a19595835644aac935d96e2ef6139bb": {
+      "model_name": "ButtonModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "icon": "compress",
+        "layout": "IPY_MODEL_8d4debda505c47629fefc5b229a8430c",
+        "style": "IPY_MODEL_fc36bde1c6a746a28932879b5895f833"
+      }
+    },
+    "251cf3df4b2d421cafc78ac087dc08fe": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "13a8ae4d4b5541b98c9dbd52cb8c37ff": {
+      "model_name": "NGLModel",
+      "model_module": "nglview-js-widgets",
+      "model_module_version": "2.7.5",
+      "state": {
+        "_camera_orientation": [
+          27.570678583350052,
+          0,
+          0,
+          0,
+          0,
+          27.570678583350052,
+          0,
+          0,
+          0,
+          0,
+          27.570678583350052,
+          0,
+          0.4785001277923584,
+          0.18959999084472656,
+          -0.16404998302459717,
+          1
+        ],
+        "_dom_classes": [],
+        "_ibtn_fullscreen": "IPY_MODEL_16c937be45eb4b6ba9e7c06bafc71884",
+        "_igui": null,
+        "_iplayer": "IPY_MODEL_3ee51606d65e4f8f8943e3e5fed8ca07",
+        "_ngl_color_dict": {},
+        "_ngl_coordinate_resource": {},
+        "_ngl_full_stage_parameters": {
+          "impostor": true,
+          "quality": "medium",
+          "workerDefault": true,
+          "sampleLevel": 0,
+          "backgroundColor": "white",
+          "rotateSpeed": 2,
+          "zoomSpeed": 1.2,
+          "panSpeed": 1,
+          "clipNear": 0,
+          "clipFar": 100,
+          "clipDist": 10,
+          "fogNear": 50,
+          "fogFar": 100,
+          "cameraFov": 40,
+          "cameraEyeSep": 0.3,
+          "cameraType": "perspective",
+          "lightColor": 14540253,
+          "lightIntensity": 1,
+          "ambientColor": 14540253,
+          "ambientIntensity": 0.2,
+          "hoverTimeout": 0,
+          "tooltip": true,
+          "mousePreset": "default"
+        },
+        "_ngl_msg_archive": [
+          {
+            "target": "Stage",
+            "type": "call_method",
+            "methodName": "loadFile",
+            "reconstruc_color_scheme": false,
+            "args": [
+              {
+                "type": "blob",
+                "data": "37542\n  -OEChem-04272000383D\n\n 29 30  0     1  0  0  0  0  0999 V2000\n    1.3923   -0.5531   -1.0023 O   0  0  0  0  0  0  0  0  0  0  0  0\n    1.8880    2.3434    1.0678 O   0  0  0  0  0  0  0  0  0  0  0  0\n    3.8653    1.0931   -0.3151 O   0  0  0  0  0  0  0  0  0  0  0  0\n    1.8679   -3.2215   -0.2838 O   0  0  0  0  0  0  0  0  0  0  0  0\n   -3.4406   -1.8540    0.5635 O   0  0  0  0  0  0  0  0  0  0  0  0\n   -0.4685    0.7913   -0.4022 N   0  0  0  0  0  0  0  0  0  0  0  0\n   -1.1659   -0.3029   -0.0614 N   0  0  0  0  0  0  0  0  0  0  0  0\n   -2.5350    1.5008   -0.3852 N   0  0  0  0  0  0  0  0  0  0  0  0\n   -4.8037   -0.0596    0.2197 N   0  0  0  0  0  0  0  0  0  0  0  0\n    3.0429    0.2641    0.5061 C   0  0  1  0  0  0  0  0  0  0  0  0\n    1.7292    0.9690    0.7805 C   0  0  2  0  0  0  0  0  0  0  0  0\n    2.5982   -0.9473   -0.3074 C   0  0  1  0  0  0  0  0  0  0  0  0\n    0.9865    0.7451   -0.5279 C   0  0  1  0  0  0  0  0  0  0  0  0\n    2.2793   -2.1586    0.5578 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -1.2891    1.8588   -0.5931 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -2.4105    0.1792   -0.0652 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -3.5364   -0.6477    0.2482 C   0  0  0  0  0  0  0  0  0  0  0  0\n    1.2085    0.4929    1.6194 H   0  0  0  0  0  0  0  0  0  0  0  0\n    3.6063    0.0262    1.4128 H   0  0  0  0  0  0  0  0  0  0  0  0\n    3.3275   -1.2220   -1.0779 H   0  0  0  0  0  0  0  0  0  0  0  0\n    1.2555    1.4858   -1.2913 H   0  0  0  0  0  0  0  0  0  0  0  0\n    1.4649   -1.9584    1.2612 H   0  0  0  0  0  0  0  0  0  0  0  0\n    3.1592   -2.4844    1.1201 H   0  0  0  0  0  0  0  0  0  0  0  0\n    2.3976    2.7451    0.3436 H   0  0  0  0  0  0  0  0  0  0  0  0\n    4.6769    0.5940   -0.5101 H   0  0  0  0  0  0  0  0  0  0  0  0\n   -0.9386    2.8423   -0.8722 H   0  0  0  0  0  0  0  0  0  0  0  0\n    1.0881   -2.9182   -0.7795 H   0  0  0  0  0  0  0  0  0  0  0  0\n   -4.9390    0.9174   -0.0201 H   0  0  0  0  0  0  0  0  0  0  0  0\n   -5.6339   -0.5992    0.4412 H   0  0  0  0  0  0  0  0  0  0  0  0\n  1 12  1  0  0  0  0\n  1 13  1  0  0  0  0\n  2 11  1  0  0  0  0\n  2 24  1  0  0  0  0\n  3 10  1  0  0  0  0\n  3 25  1  0  0  0  0\n  4 14  1  0  0  0  0\n  4 27  1  0  0  0  0\n  5 17  2  0  0  0  0\n  6  7  1  0  0  0  0\n  6 13  1  0  0  0  0\n  6 15  1  0  0  0  0\n  7 16  2  0  0  0  0\n  8 15  2  0  0  0  0\n  8 16  1  0  0  0  0\n  9 17  1  0  0  0  0\n  9 28  1  0  0  0  0\n  9 29  1  0  0  0  0\n 10 11  1  0  0  0  0\n 10 12  1  0  0  0  0\n 10 19  1  0  0  0  0\n 11 13  1  0  0  0  0\n 11 18  1  0  0  0  0\n 12 14  1  0  0  0  0\n 12 20  1  0  0  0  0\n 13 21  1  0  0  0  0\n 14 22  1  0  0  0  0\n 14 23  1  0  0  0  0\n 15 26  1  0  0  0  0\n 16 17  1  0  0  0  0\nM  END\n> <PUBCHEM_COMPOUND_CID>\n37542\n\n> <PUBCHEM_CONFORMER_RMSD>\n0.6\n\n> <PUBCHEM_CONFORMER_DIVERSEORDER>\n8\n37\n28\n32\n15\n52\n24\n53\n47\n27\n11\n23\n38\n58\n31\n16\n51\n13\n5\n25\n7\n54\n48\n20\n33\n60\n1\n39\n21\n55\n6\n26\n12\n34\n40\n59\n4\n19\n56\n3\n49\n14\n35\n18\n46\n43\n9\n50\n22\n57\n2\n45\n17\n30\n10\n44\n41\n36\n42\n29\n\n> <PUBCHEM_MMFF94_PARTIAL_CHARGES>\n23\n1 -0.56\n10 0.28\n11 0.28\n12 0.28\n13 0.54\n14 0.28\n15 0.04\n16 0.43\n17 0.72\n2 -0.68\n24 0.4\n25 0.4\n26 0.15\n27 0.4\n28 0.37\n29 0.37\n3 -0.68\n4 -0.68\n5 -0.57\n6 0.31\n7 -0.71\n8 -0.57\n9 -0.8\n\n> <PUBCHEM_EFFECTIVE_ROTOR_COUNT>\n4\n\n> <PUBCHEM_PHARMACOPHORE_FEATURES>\n13\n1 1 acceptor\n1 2 acceptor\n1 2 donor\n1 3 acceptor\n1 3 donor\n1 4 acceptor\n1 4 donor\n1 5 acceptor\n1 9 donor\n3 6 8 15 cation\n3 7 8 16 cation\n5 1 10 11 12 13 rings\n5 6 7 8 15 16 rings\n\n> <PUBCHEM_HEAVY_ATOM_COUNT>\n17\n\n> <PUBCHEM_ATOM_DEF_STEREO_COUNT>\n4\n\n> <PUBCHEM_ATOM_UDEF_STEREO_COUNT>\n0\n\n> <PUBCHEM_BOND_DEF_STEREO_COUNT>\n0\n\n> <PUBCHEM_BOND_UDEF_STEREO_COUNT>\n0\n\n> <PUBCHEM_ISOTOPIC_ATOM_COUNT>\n0\n\n> <PUBCHEM_COMPONENT_COUNT>\n1\n\n> <PUBCHEM_CACTVS_TAUTO_COUNT>\n2\n\n> <PUBCHEM_CONFORMER_ID>\n000092A600000008\n\n> <PUBCHEM_MMFF94_ENERGY>\n32.7102\n\n> <PUBCHEM_FEATURE_SELFOVERLAP>\n68.738\n\n> <PUBCHEM_SHAPE_FINGERPRINT>\n10366900 7 18341048613932473801\n10616163 171 18335707203577530555\n10618630 7 18260550021909764975\n11067466 332 18408892858043279796\n12251169 10 18131068264057889829\n12500047 106 18261946341616414597\n12506688 2 18339645525289294274\n12932764 1 17917418835143900437\n13296908 3 18336826390254810637\n13533116 47 18271526412694720947\n14252887 29 18260838119863124979\n14350558 41 18260553307327605423\n15375358 24 18187642544090999907\n15375462 189 18272928319319937182\n15375462 6 18409727352613598861\n16945 1 18270381880665886116\n17804303 29 18194125122772125687\n17834074 16 18409730638495610779\n19049666 15 18267013960364442537\n19107657 46 18335703887968227535\n20281407 28 18335708247401834761\n20442098 301 18342451552067642823\n20645477 70 18342170030009712159\n21501502 16 18338517417616228552\n21730867 7 18342459261433290034\n23184049 29 18191861215366453098\n23557571 272 17385435497158448789\n23559900 14 18334852779826065316\n2871803 45 18334294257889064983\n31174 14 18343860026388814865\n33824 294 18410853295486113987\n474229 33 18335983181443943002\n5902787 121 17973715879686806194\n7364860 26 18412824651442228710\n81228 2 17968099681777240813\n9709674 26 18335140856341868843\n\n> <PUBCHEM_SHAPE_MULTIPOLES>\n300.58\n7.02\n2.49\n0.85\n5.46\n1.27\n0.04\n1.37\n0.82\n-1.33\n0.17\n-0.29\n-0.14\n0.69\n\n> <PUBCHEM_SHAPE_SELFOVERLAP>\n633.235\n\n> <PUBCHEM_SHAPE_VOLUME>\n169.5\n\n> <PUBCHEM_COORDINATE_TYPE>\n2\n5\n10\n\n$$$$\n",
+                "binary": false
+              }
+            ],
+            "kwargs": {
+              "defaultRepresentation": true,
+              "ext": "sdf"
+            }
+          },
+          {
+            "target": "Widget",
+            "type": "call_method",
+            "methodName": "setSize",
+            "reconstruc_color_scheme": false,
+            "args": [
+              "300px",
+              "300px"
+            ],
+            "kwargs": {}
+          }
+        ],
+        "_ngl_original_stage_parameters": {
+          "impostor": true,
+          "quality": "medium",
+          "workerDefault": true,
+          "sampleLevel": 0,
+          "backgroundColor": "white",
+          "rotateSpeed": 2,
+          "zoomSpeed": 1.2,
+          "panSpeed": 1,
+          "clipNear": 0,
+          "clipFar": 100,
+          "clipDist": 10,
+          "fogNear": 50,
+          "fogFar": 100,
+          "cameraFov": 40,
+          "cameraEyeSep": 0.3,
+          "cameraType": "perspective",
+          "lightColor": 14540253,
+          "lightIntensity": 1,
+          "ambientColor": 14540253,
+          "ambientIntensity": 0.2,
+          "hoverTimeout": 0,
+          "tooltip": true,
+          "mousePreset": "default"
+        },
+        "_ngl_repr_dict": {
+          "0": {
+            "0": {
+              "type": "ball+stick",
+              "params": {
+                "lazy": false,
+                "visible": true,
+                "quality": "high",
+                "sphereDetail": 2,
+                "radialSegments": 20,
+                "openEnded": true,
+                "disableImpostor": false,
+                "aspectRatio": 1.5,
+                "lineOnly": false,
+                "cylinderOnly": false,
+                "multipleBond": "off",
+                "bondScale": 0.3,
+                "bondSpacing": 0.75,
+                "linewidth": 2,
+                "radiusType": "size",
+                "radiusData": {},
+                "radiusSize": 0.15,
+                "radiusScale": 2,
+                "assembly": "default",
+                "defaultAssembly": "",
+                "clipNear": 0,
+                "clipRadius": 0,
+                "clipCenter": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "flatShaded": false,
+                "opacity": 1,
+                "depthWrite": true,
+                "side": "double",
+                "wireframe": false,
+                "colorScheme": "element",
+                "colorScale": "",
+                "colorReverse": false,
+                "colorValue": 9474192,
+                "colorMode": "hcl",
+                "roughness": 0.4,
+                "metalness": 0,
+                "diffuse": 16777215,
+                "diffuseInterior": false,
+                "useInteriorColor": true,
+                "interiorColor": 2236962,
+                "interiorDarkening": 0,
+                "matrix": {
+                  "elements": [
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                "disablePicking": false,
+                "sele": ""
+              }
+            }
+          }
+        },
+        "_ngl_version": "2.0.0-dev.36",
+        "_ngl_view_id": [
+          "96FDBE19-834E-44CF-9021-B7E226133F3B"
+        ],
+        "_player_dict": {},
+        "_scene_position": {},
+        "_scene_rotation": {},
+        "_synced_model_ids": [],
+        "_synced_repr_model_ids": [],
+        "layout": "IPY_MODEL_251cf3df4b2d421cafc78ac087dc08fe",
+        "n_components": 1,
+        "picked": {}
+      }
+    },
+    "98f05402de76440b9b4ad150340dee05": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "b01bfedb5da04b258ff4b7c9f729e759": {
+      "model_name": "ImageModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_98f05402de76440b9b4ad150340dee05",
+        "width": "900.0"
+      }
+    },
+    "6513aadf105a4a75b2bfc4c67d7471cb": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "669d14b74e8e494081fb3d80b0118582": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "566de6c728054d1ebd917f1a8caf8891": {
+      "model_name": "PlayModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_6513aadf105a4a75b2bfc4c67d7471cb",
+        "max": 0,
+        "style": "IPY_MODEL_669d14b74e8e494081fb3d80b0118582"
+      }
+    },
+    "343f7ecd71094a0bb72b24219cc58ab3": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "72af99f16e17409e8f11ae3d4f473abe": {
+      "model_name": "SliderStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "d59ac5797013431d83e796e3680e3889": {
+      "model_name": "IntSliderModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_343f7ecd71094a0bb72b24219cc58ab3",
+        "max": 0,
+        "style": "IPY_MODEL_72af99f16e17409e8f11ae3d4f473abe"
+      }
+    },
+    "01e72cb8bdda480f9153bf0c595715d3": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "3ee51606d65e4f8f8943e3e5fed8ca07": {
+      "model_name": "HBoxModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "children": [
+          "IPY_MODEL_566de6c728054d1ebd917f1a8caf8891",
+          "IPY_MODEL_d59ac5797013431d83e796e3680e3889"
+        ],
+        "layout": "IPY_MODEL_01e72cb8bdda480f9153bf0c595715d3"
+      }
+    },
+    "4048b1a1feb44854b66e06e7565d8edd": {
+      "model_name": "LinkModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "source": [
+          "IPY_MODEL_566de6c728054d1ebd917f1a8caf8891",
+          "value"
+        ],
+        "target": [
+          "IPY_MODEL_d59ac5797013431d83e796e3680e3889",
+          "value"
+        ]
+      }
+    },
+    "d5a9694a8bf04ebf93aa3d3470c114b1": {
+      "model_name": "LinkModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "source": [
+          "IPY_MODEL_566de6c728054d1ebd917f1a8caf8891",
+          "value"
+        ],
+        "target": [
+          "IPY_MODEL_13a8ae4d4b5541b98c9dbd52cb8c37ff",
+          "frame"
+        ]
+      }
+    },
+    "56647dc2025d4fa7869ee1f67bc449eb": {
+      "model_name": "LinkModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "source": [
+          "IPY_MODEL_566de6c728054d1ebd917f1a8caf8891",
+          "max"
+        ],
+        "target": [
+          "IPY_MODEL_13a8ae4d4b5541b98c9dbd52cb8c37ff",
+          "max_frame"
+        ]
+      }
+    },
+    "2cb02523bd99450180383a1fc87f314d": {
+      "model_name": "LinkModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "source": [
+          "IPY_MODEL_d59ac5797013431d83e796e3680e3889",
+          "max"
+        ],
+        "target": [
+          "IPY_MODEL_13a8ae4d4b5541b98c9dbd52cb8c37ff",
+          "max_frame"
+        ]
+      }
+    },
+    "7a8be4e70ead4b078c62c942d92e31bd": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {
+        "width": "34px"
+      }
+    },
+    "82d4eac6d7ec4782a542347ca53ba03d": {
+      "model_name": "ButtonStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "16c937be45eb4b6ba9e7c06bafc71884": {
+      "model_name": "ButtonModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "icon": "compress",
+        "layout": "IPY_MODEL_7a8be4e70ead4b078c62c942d92e31bd",
+        "style": "IPY_MODEL_82d4eac6d7ec4782a542347ca53ba03d"
+      }
+    },
+    "770be438b32c40d09414705007be38ec": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "439065583c0e490e8f0e6147e9cddc5e": {
+      "model_name": "NGLModel",
+      "model_module": "nglview-js-widgets",
+      "model_module_version": "2.7.5",
+      "state": {
+        "_camera_orientation": [
+          29.51374052552974,
+          0,
+          0,
+          0,
+          0,
+          29.51374052552974,
+          0,
+          0,
+          0,
+          0,
+          29.51374052552974,
+          0,
+          -0.4715001583099365,
+          -0.6279000043869019,
+          -0.4013000726699829,
+          1
+        ],
+        "_dom_classes": [],
+        "_ibtn_fullscreen": "IPY_MODEL_fe451aab20b54056bc26f3d51c816044",
+        "_igui": null,
+        "_iplayer": "IPY_MODEL_d187779b29c94d4da66371d13d086537",
+        "_ngl_color_dict": {},
+        "_ngl_coordinate_resource": {},
+        "_ngl_full_stage_parameters": {
+          "impostor": true,
+          "quality": "medium",
+          "workerDefault": true,
+          "sampleLevel": 0,
+          "backgroundColor": "white",
+          "rotateSpeed": 2,
+          "zoomSpeed": 1.2,
+          "panSpeed": 1,
+          "clipNear": 0,
+          "clipFar": 100,
+          "clipDist": 10,
+          "fogNear": 50,
+          "fogFar": 100,
+          "cameraFov": 40,
+          "cameraEyeSep": 0.3,
+          "cameraType": "perspective",
+          "lightColor": 14540253,
+          "lightIntensity": 1,
+          "ambientColor": 14540253,
+          "ambientIntensity": 0.2,
+          "hoverTimeout": 0,
+          "tooltip": true,
+          "mousePreset": "default"
+        },
+        "_ngl_msg_archive": [
+          {
+            "target": "Stage",
+            "type": "call_method",
+            "methodName": "loadFile",
+            "reconstruc_color_scheme": false,
+            "args": [
+              {
+                "type": "blob",
+                "data": "3652\n  -OEChem-04272000483D\n\n 49 50  0     1  0  0  0  0  0999 V2000\n   -4.9068   -1.9876   -1.6099 Cl  0  0  0  0  0  0  0  0  0  0  0  0\n   -0.2693   -2.9958    0.4835 O   0  0  0  0  0  0  0  0  0  0  0  0\n    2.9165   -1.2358   -0.1070 N   0  0  1  0  0  0  0  0  0  0  0  0\n    0.0406    2.4644   -0.3071 N   0  0  0  0  0  0  0  0  0  0  0  0\n   -2.1893   -0.0466    2.2104 N   0  0  0  0  0  0  0  0  0  0  0  0\n    2.3087    1.6277    0.0766 C   0  0  0  0  0  0  0  0  0  0  0  0\n    2.3903    0.8671   -1.2528 C   0  0  0  0  0  0  0  0  0  0  0  0\n    1.4002    2.8618   -0.0060 C   0  0  1  0  0  0  0  0  0  0  0  0\n    3.3526   -0.3158   -1.1511 C   0  0  0  0  0  0  0  0  0  0  0  0\n    1.5550   -1.7055   -0.3698 C   0  0  0  0  0  0  0  0  0  0  0  0\n    1.8790    3.8197   -1.0921 C   0  0  0  0  0  0  0  0  0  0  0  0\n    3.8345   -2.3716   -0.0046 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -0.7079    1.6265    0.4999 C   0  0  0  0  0  0  0  0  0  0  0  0\n    1.0583   -2.5775    0.7722 C   0  0  0  0  0  0  0  0  0  0  0  0\n    5.2422   -1.9109    0.3332 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -1.7118    0.7631   -0.0086 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -0.4750    1.6215    1.8831 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -2.4298   -0.0583    0.8856 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -1.9890    0.7252   -1.3856 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -1.2286    0.7826    2.6787 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -3.4099   -0.8967    0.3615 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -2.9747   -0.1228   -1.8825 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -3.6858   -0.9346   -1.0076 C   0  0  0  0  0  0  0  0  0  0  0  0\n    1.9766    0.9667    0.8828 H   0  0  0  0  0  0  0  0  0  0  0  0\n    3.3175    1.9580    0.3580 H   0  0  0  0  0  0  0  0  0  0  0  0\n    1.4083    0.5854   -1.6424 H   0  0  0  0  0  0  0  0  0  0  0  0\n    2.8141    1.5278   -2.0192 H   0  0  0  0  0  0  0  0  0  0  0  0\n    1.4428    3.4070    0.9440 H   0  0  0  0  0  0  0  0  0  0  0  0\n    3.4161   -0.8147   -2.1269 H   0  0  0  0  0  0  0  0  0  0  0  0\n    4.3415    0.1012   -0.9325 H   0  0  0  0  0  0  0  0  0  0  0  0\n   -0.2911    2.6479   -1.2454 H   0  0  0  0  0  0  0  0  0  0  0  0\n    1.4910   -2.2532   -1.3197 H   0  0  0  0  0  0  0  0  0  0  0  0\n    0.8300   -0.8924   -0.4392 H   0  0  0  0  0  0  0  0  0  0  0  0\n    1.7257    3.4293   -2.1037 H   0  0  0  0  0  0  0  0  0  0  0  0\n    1.3169    4.7594   -1.0360 H   0  0  0  0  0  0  0  0  0  0  0  0\n    2.9395    4.0620   -0.9675 H   0  0  0  0  0  0  0  0  0  0  0  0\n    3.8496   -2.9720   -0.9228 H   0  0  0  0  0  0  0  0  0  0  0  0\n    3.5564   -3.0340    0.8189 H   0  0  0  0  0  0  0  0  0  0  0  0\n    1.6303   -3.4961    0.9145 H   0  0  0  0  0  0  0  0  0  0  0  0\n    1.0414   -2.0254    1.7175 H   0  0  0  0  0  0  0  0  0  0  0  0\n    5.7493   -1.4534   -0.5217 H   0  0  0  0  0  0  0  0  0  0  0  0\n    5.2485   -1.2047    1.1708 H   0  0  0  0  0  0  0  0  0  0  0  0\n    5.8498   -2.7735    0.6297 H   0  0  0  0  0  0  0  0  0  0  0  0\n    0.2615    2.2609    2.3566 H   0  0  0  0  0  0  0  0  0  0  0  0\n   -1.4546    1.3321   -2.1097 H   0  0  0  0  0  0  0  0  0  0  0  0\n   -1.0803    0.7528    3.7532 H   0  0  0  0  0  0  0  0  0  0  0  0\n   -3.9729   -1.5378    1.0388 H   0  0  0  0  0  0  0  0  0  0  0  0\n   -3.1743   -0.1410   -2.9506 H   0  0  0  0  0  0  0  0  0  0  0  0\n   -0.2454   -3.5036   -0.3455 H   0  0  0  0  0  0  0  0  0  0  0  0\n  1 23  1  0  0  0  0\n  2 14  1  0  0  0  0\n  2 49  1  0  0  0  0\n  3  9  1  0  0  0  0\n  3 10  1  0  0  0  0\n  3 12  1  0  0  0  0\n  4  8  1  0  0  0  0\n  4 13  1  0  0  0  0\n  4 31  1  0  0  0  0\n  5 18  2  0  0  0  0\n  5 20  1  0  0  0  0\n  6  7  1  0  0  0  0\n  6  8  1  0  0  0  0\n  6 24  1  0  0  0  0\n  6 25  1  0  0  0  0\n  7  9  1  0  0  0  0\n  7 26  1  0  0  0  0\n  7 27  1  0  0  0  0\n  8 11  1  0  0  0  0\n  8 28  1  0  0  0  0\n  9 29  1  0  0  0  0\n  9 30  1  0  0  0  0\n 10 14  1  0  0  0  0\n 10 32  1  0  0  0  0\n 10 33  1  0  0  0  0\n 11 34  1  0  0  0  0\n 11 35  1  0  0  0  0\n 11 36  1  0  0  0  0\n 12 15  1  0  0  0  0\n 12 37  1  0  0  0  0\n 12 38  1  0  0  0  0\n 13 16  2  0  0  0  0\n 13 17  1  0  0  0  0\n 14 39  1  0  0  0  0\n 14 40  1  0  0  0  0\n 15 41  1  0  0  0  0\n 15 42  1  0  0  0  0\n 15 43  1  0  0  0  0\n 16 18  1  0  0  0  0\n 16 19  1  0  0  0  0\n 17 20  2  0  0  0  0\n 17 44  1  0  0  0  0\n 18 21  1  0  0  0  0\n 19 22  2  0  0  0  0\n 19 45  1  0  0  0  0\n 20 46  1  0  0  0  0\n 21 23  2  0  0  0  0\n 21 47  1  0  0  0  0\n 22 23  1  0  0  0  0\n 22 48  1  0  0  0  0\nM  END\n> <PUBCHEM_COMPOUND_CID>\n3652\n\n> <PUBCHEM_CONFORMER_RMSD>\n1\n\n> <PUBCHEM_CONFORMER_DIVERSEORDER>\n2\n25\n172\n286\n111\n226\n295\n56\n9\n131\n279\n42\n266\n282\n43\n253\n189\n118\n275\n195\n203\n156\n153\n10\n285\n80\n187\n233\n57\n11\n232\n294\n184\n301\n255\n127\n79\n22\n116\n231\n15\n243\n112\n248\n169\n53\n106\n224\n200\n33\n135\n38\n214\n34\n199\n137\n94\n298\n66\n300\n140\n3\n274\n28\n48\n72\n175\n73\n254\n180\n46\n164\n259\n170\n8\n177\n114\n90\n27\n84\n120\n201\n296\n115\n216\n20\n91\n128\n280\n4\n249\n264\n54\n121\n287\n16\n70\n154\n1\n290\n124\n246\n50\n258\n147\n277\n144\n270\n139\n64\n113\n136\n289\n238\n281\n19\n278\n87\n26\n198\n77\n186\n150\n176\n145\n250\n166\n194\n130\n76\n257\n105\n107\n95\n5\n302\n152\n237\n297\n219\n220\n162\n89\n32\n39\n129\n240\n126\n97\n163\n288\n59\n110\n134\n207\n36\n44\n213\n276\n293\n133\n123\n117\n37\n183\n125\n174\n82\n252\n6\n197\n83\n235\n23\n211\n98\n261\n40\n218\n239\n283\n101\n212\n86\n92\n179\n161\n60\n225\n102\n18\n196\n62\n108\n143\n271\n71\n167\n256\n234\n173\n209\n149\n13\n229\n93\n24\n119\n41\n55\n263\n230\n31\n85\n51\n122\n269\n210\n158\n29\n155\n205\n188\n267\n78\n75\n96\n30\n47\n146\n222\n159\n49\n221\n292\n291\n63\n151\n190\n223\n251\n202\n284\n206\n178\n268\n17\n58\n7\n244\n74\n227\n228\n35\n81\n138\n12\n272\n185\n142\n247\n182\n262\n171\n65\n103\n21\n68\n265\n193\n160\n236\n104\n61\n215\n141\n191\n69\n192\n14\n45\n260\n52\n181\n242\n299\n273\n245\n100\n88\n165\n241\n157\n109\n204\n168\n217\n132\n99\n208\n67\n148\n\n> <PUBCHEM_MMFF94_PARTIAL_CHARGES>\n25\n1 -0.18\n10 0.27\n12 0.27\n13 0.1\n14 0.28\n17 -0.15\n18 0.31\n19 -0.15\n2 -0.68\n20 0.16\n21 -0.15\n22 -0.15\n23 0.18\n3 -0.81\n31 0.4\n4 -0.87\n44 0.15\n45 0.15\n46 0.15\n47 0.15\n48 0.15\n49 0.4\n5 -0.62\n8 0.37\n9 0.27\n\n> <PUBCHEM_EFFECTIVE_ROTOR_COUNT>\n9\n\n> <PUBCHEM_PHARMACOPHORE_FEATURES>\n8\n1 2 acceptor\n1 2 donor\n1 3 cation\n1 4 cation\n1 4 donor\n1 5 acceptor\n6 16 18 19 21 22 23 rings\n6 5 13 16 17 18 20 rings\n\n> <PUBCHEM_HEAVY_ATOM_COUNT>\n23\n\n> <PUBCHEM_ATOM_DEF_STEREO_COUNT>\n0\n\n> <PUBCHEM_ATOM_UDEF_STEREO_COUNT>\n1\n\n> <PUBCHEM_BOND_DEF_STEREO_COUNT>\n0\n\n> <PUBCHEM_BOND_UDEF_STEREO_COUNT>\n0\n\n> <PUBCHEM_ISOTOPIC_ATOM_COUNT>\n0\n\n> <PUBCHEM_COMPONENT_COUNT>\n1\n\n> <PUBCHEM_CACTVS_TAUTO_COUNT>\n3\n\n> <PUBCHEM_CONFORMER_ID>\n00000E4400000002\n\n> <PUBCHEM_MMFF94_ENERGY>\n63.8348\n\n> <PUBCHEM_FEATURE_SELFOVERLAP>\n40.627\n\n> <PUBCHEM_SHAPE_FINGERPRINT>\n11370993 70 17903911498221629501\n11578080 2 17845918680901969817\n11582403 64 16740823930642966981\n12363563 72 18334578993236316844\n12539773 59 17845951618889169395\n12553582 1 18266200360804594430\n12596599 1 17917164796544812310\n12824470 246 17988645241778719925\n13383661 66 16544145592937815438\n14142880 1 17983863272166838977\n14787075 74 17415834953963450576\n17138139 8 17053294178599512693\n17492 54 18262523700995099686\n192875 21 18411136918226021522\n19433438 48 18127701435005089986\n19930381 70 18190174775320641149\n23402539 116 18270396075712511166\n23419403 2 17678485110595375275\n23728640 28 17400922994888414056\n238 59 18187926239228166692\n3323516 105 18261947553007961351\n6287921 2 17559976332718027678\n\n> <PUBCHEM_SHAPE_MULTIPOLES>\n454.39\n7.81\n3.79\n1.96\n0.7\n1.11\n0.86\n-6.6\n-2.97\n3.33\n-0.38\n-1.66\n0.5\n-1.55\n\n> <PUBCHEM_SHAPE_SELFOVERLAP>\n928.093\n\n> <PUBCHEM_SHAPE_VOLUME>\n264.8\n\n> <PUBCHEM_COORDINATE_TYPE>\n2\n5\n10\n\n$$$$\n",
+                "binary": false
+              }
+            ],
+            "kwargs": {
+              "defaultRepresentation": true,
+              "ext": "sdf"
+            }
+          },
+          {
+            "target": "Widget",
+            "type": "call_method",
+            "methodName": "setSize",
+            "reconstruc_color_scheme": false,
+            "args": [
+              "300px",
+              "300px"
+            ],
+            "kwargs": {}
+          }
+        ],
+        "_ngl_original_stage_parameters": {
+          "impostor": true,
+          "quality": "medium",
+          "workerDefault": true,
+          "sampleLevel": 0,
+          "backgroundColor": "white",
+          "rotateSpeed": 2,
+          "zoomSpeed": 1.2,
+          "panSpeed": 1,
+          "clipNear": 0,
+          "clipFar": 100,
+          "clipDist": 10,
+          "fogNear": 50,
+          "fogFar": 100,
+          "cameraFov": 40,
+          "cameraEyeSep": 0.3,
+          "cameraType": "perspective",
+          "lightColor": 14540253,
+          "lightIntensity": 1,
+          "ambientColor": 14540253,
+          "ambientIntensity": 0.2,
+          "hoverTimeout": 0,
+          "tooltip": true,
+          "mousePreset": "default"
+        },
+        "_ngl_repr_dict": {
+          "0": {
+            "0": {
+              "type": "ball+stick",
+              "params": {
+                "lazy": false,
+                "visible": true,
+                "quality": "high",
+                "sphereDetail": 2,
+                "radialSegments": 20,
+                "openEnded": true,
+                "disableImpostor": false,
+                "aspectRatio": 1.5,
+                "lineOnly": false,
+                "cylinderOnly": false,
+                "multipleBond": "off",
+                "bondScale": 0.3,
+                "bondSpacing": 0.75,
+                "linewidth": 2,
+                "radiusType": "size",
+                "radiusData": {},
+                "radiusSize": 0.15,
+                "radiusScale": 2,
+                "assembly": "default",
+                "defaultAssembly": "",
+                "clipNear": 0,
+                "clipRadius": 0,
+                "clipCenter": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "flatShaded": false,
+                "opacity": 1,
+                "depthWrite": true,
+                "side": "double",
+                "wireframe": false,
+                "colorScheme": "element",
+                "colorScale": "",
+                "colorReverse": false,
+                "colorValue": 9474192,
+                "colorMode": "hcl",
+                "roughness": 0.4,
+                "metalness": 0,
+                "diffuse": 16777215,
+                "diffuseInterior": false,
+                "useInteriorColor": true,
+                "interiorColor": 2236962,
+                "interiorDarkening": 0,
+                "matrix": {
+                  "elements": [
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                "disablePicking": false,
+                "sele": ""
+              }
+            }
+          }
+        },
+        "_ngl_version": "2.0.0-dev.36",
+        "_ngl_view_id": [
+          "BB786BDC-AC89-4BAD-9CFF-A1D584D9A070"
+        ],
+        "_player_dict": {},
+        "_scene_position": {},
+        "_scene_rotation": {},
+        "_synced_model_ids": [],
+        "_synced_repr_model_ids": [],
+        "layout": "IPY_MODEL_770be438b32c40d09414705007be38ec",
+        "n_components": 1,
+        "picked": {}
+      }
+    },
+    "c875dfdead094d269080a2d3e62dd74c": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "b3fb517bca4a493fb04aae871184bc50": {
+      "model_name": "ImageModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_c875dfdead094d269080a2d3e62dd74c",
+        "width": "900.0"
+      }
+    },
+    "016887185e6d48829db070b8a52095ca": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "c860af901bbc4b4ba9eea11eb0e044c5": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "948eae5070d8403c916a06316b73f1f7": {
+      "model_name": "PlayModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_016887185e6d48829db070b8a52095ca",
+        "max": 0,
+        "style": "IPY_MODEL_c860af901bbc4b4ba9eea11eb0e044c5"
+      }
+    },
+    "a3cd9e85215b4684872f35dfd76f9a2f": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "38404de2d8e7488e93516c2b0b7294bc": {
+      "model_name": "SliderStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "9e69d1a64fb840b2be4b106b356ad546": {
+      "model_name": "IntSliderModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_a3cd9e85215b4684872f35dfd76f9a2f",
+        "max": 0,
+        "style": "IPY_MODEL_38404de2d8e7488e93516c2b0b7294bc"
+      }
+    },
+    "5c8f21a4398e4b939d03ecd8c5aede01": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "d187779b29c94d4da66371d13d086537": {
+      "model_name": "HBoxModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "children": [
+          "IPY_MODEL_948eae5070d8403c916a06316b73f1f7",
+          "IPY_MODEL_9e69d1a64fb840b2be4b106b356ad546"
+        ],
+        "layout": "IPY_MODEL_5c8f21a4398e4b939d03ecd8c5aede01"
+      }
+    },
+    "5187de19ce104959908411382f95079b": {
+      "model_name": "LinkModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "source": [
+          "IPY_MODEL_948eae5070d8403c916a06316b73f1f7",
+          "value"
+        ],
+        "target": [
+          "IPY_MODEL_9e69d1a64fb840b2be4b106b356ad546",
+          "value"
+        ]
+      }
+    },
+    "b8a30922f16b4c7e8658fdbba43cdb1b": {
+      "model_name": "LinkModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "source": [
+          "IPY_MODEL_948eae5070d8403c916a06316b73f1f7",
+          "value"
+        ],
+        "target": [
+          "IPY_MODEL_439065583c0e490e8f0e6147e9cddc5e",
+          "frame"
+        ]
+      }
+    },
+    "dbbd5ab7aa0c4e79b4b8d5550cbba4ce": {
+      "model_name": "LinkModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "source": [
+          "IPY_MODEL_948eae5070d8403c916a06316b73f1f7",
+          "max"
+        ],
+        "target": [
+          "IPY_MODEL_439065583c0e490e8f0e6147e9cddc5e",
+          "max_frame"
+        ]
+      }
+    },
+    "4f18973c5c5f41af9f8aac2cedc2eb8c": {
+      "model_name": "LinkModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "source": [
+          "IPY_MODEL_9e69d1a64fb840b2be4b106b356ad546",
+          "max"
+        ],
+        "target": [
+          "IPY_MODEL_439065583c0e490e8f0e6147e9cddc5e",
+          "max_frame"
+        ]
+      }
+    },
+    "d158ac0021ac4d4ab7954cc345d11f14": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {
+        "width": "34px"
+      }
+    },
+    "af5ecb615d5c4b5fb073fcd02391e144": {
+      "model_name": "ButtonStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "fe451aab20b54056bc26f3d51c816044": {
+      "model_name": "ButtonModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "icon": "compress",
+        "layout": "IPY_MODEL_d158ac0021ac4d4ab7954cc345d11f14",
+        "style": "IPY_MODEL_af5ecb615d5c4b5fb073fcd02391e144"
+      }
+    },
+    "bff586a9a35e4b179a3d382bfae4230b": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "abcc87bf4d324cb8ac2d2859f76d6bda": {
+      "model_name": "NGLModel",
+      "model_module": "nglview-js-widgets",
+      "model_module_version": "2.7.5",
+      "state": {
+        "_camera_orientation": [
+          39.96910290809903,
+          0,
+          0,
+          0,
+          0,
+          39.96910290809903,
+          0,
+          0,
+          0,
+          0,
+          39.96910290809903,
+          0,
+          -0.0955500602722168,
+          -0.08439993858337402,
+          0.4115000367164612,
+          1
+        ],
+        "_dom_classes": [],
+        "_ibtn_fullscreen": "IPY_MODEL_dc1c2cbf549c4c81b93ce0f07acf353a",
+        "_igui": null,
+        "_iplayer": "IPY_MODEL_cc0714f4b27340b3ad2aa84d8e694775",
+        "_ngl_color_dict": {},
+        "_ngl_coordinate_resource": {},
+        "_ngl_full_stage_parameters": {
+          "impostor": true,
+          "quality": "medium",
+          "workerDefault": true,
+          "sampleLevel": 0,
+          "backgroundColor": "white",
+          "rotateSpeed": 2,
+          "zoomSpeed": 1.2,
+          "panSpeed": 1,
+          "clipNear": 0,
+          "clipFar": 100,
+          "clipDist": 10,
+          "fogNear": 50,
+          "fogFar": 100,
+          "cameraFov": 40,
+          "cameraEyeSep": 0.3,
+          "cameraType": "perspective",
+          "lightColor": 14540253,
+          "lightIntensity": 1,
+          "ambientColor": 14540253,
+          "ambientIntensity": 0.2,
+          "hoverTimeout": 0,
+          "tooltip": true,
+          "mousePreset": "default"
+        },
+        "_ngl_msg_archive": [
+          {
+            "target": "Stage",
+            "type": "call_method",
+            "methodName": "loadFile",
+            "reconstruc_color_scheme": false,
+            "args": [
+              {
+                "type": "blob",
+                "data": "4413\n  -OEChem-04272000453D\n\n 43 45  0     0  0  0  0  0  0999 V2000\n    0.5434    0.1596    0.4734 O   0  0  0  0  0  0  0  0  0  0  0  0\n    0.6532    0.0837   -1.8534 O   0  0  0  0  0  0  0  0  0  0  0  0\n   -8.1471   -1.0575   -0.0121 N   0  0  0  0  0  0  0  0  0  0  0  0\n   -7.7521    1.2447   -0.0812 N   0  0  0  0  0  0  0  0  0  0  0  0\n    6.7384   -0.7398   -0.0717 N   0  0  0  0  0  0  0  0  0  0  0  0\n    8.7882    0.0312    0.7405 N   0  0  0  0  0  0  0  0  0  0  0  0\n    6.9671    1.3624    1.0857 N   0  0  0  0  0  0  0  0  0  0  0  0\n   -3.5767    0.7399    0.1976 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -3.0507   -0.5715    0.2804 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -4.9669    0.9177    0.1057 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -1.6606   -0.7494    0.3721 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -5.8261   -0.1814    0.0957 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -3.9303   -1.6662    0.2689 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -2.6971    1.8345    0.2090 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -0.8015    0.3498    0.3822 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -5.3087   -1.4709    0.1772 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -1.3188    1.6392    0.3008 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -7.2633    0.0199    0.0002 C   0  0  0  0  0  0  0  0  0  0  0  0\n    2.6512   -0.1734   -0.5776 C   0  0  0  0  0  0  0  0  0  0  0  0\n    1.1911    0.0307   -0.7575 C   0  0  0  0  0  0  0  0  0  0  0  0\n    3.5137    0.2931   -1.5482 C   0  0  0  0  0  0  0  0  0  0  0  0\n    3.0993   -0.8211    0.5552 C   0  0  0  0  0  0  0  0  0  0  0  0\n    5.3637   -0.5485   -0.2418 C   0  0  0  0  0  0  0  0  0  0  0  0\n    4.8851    0.1034   -1.3783 C   0  0  0  0  0  0  0  0  0  0  0  0\n    4.4708   -1.0106    0.7250 C   0  0  0  0  0  0  0  0  0  0  0  0\n    7.4345    0.1806    0.5524 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -5.3598    1.9308    0.0426 H   0  0  0  0  0  0  0  0  0  0  0  0\n   -1.2407   -1.7517    0.4375 H   0  0  0  0  0  0  0  0  0  0  0  0\n   -3.5473   -2.6828    0.3314 H   0  0  0  0  0  0  0  0  0  0  0  0\n   -3.0786    2.8516    0.1465 H   0  0  0  0  0  0  0  0  0  0  0  0\n   -5.9307   -2.3592    0.1733 H   0  0  0  0  0  0  0  0  0  0  0  0\n   -0.6547    2.4994    0.3090 H   0  0  0  0  0  0  0  0  0  0  0  0\n    3.1534    0.8053   -2.4353 H   0  0  0  0  0  0  0  0  0  0  0  0\n    2.4235   -1.2013    1.3153 H   0  0  0  0  0  0  0  0  0  0  0  0\n    5.5730    0.4676   -2.1370 H   0  0  0  0  0  0  0  0  0  0  0  0\n    4.8339   -1.5227    1.6123 H   0  0  0  0  0  0  0  0  0  0  0  0\n   -9.1467   -0.8966   -0.0809 H   0  0  0  0  0  0  0  0  0  0  0  0\n   -7.8582   -2.0260    0.0459 H   0  0  0  0  0  0  0  0  0  0  0  0\n   -8.7744    1.1801   -0.1420 H   0  0  0  0  0  0  0  0  0  0  0  0\n    9.2765   -0.7906    0.4016 H   0  0  0  0  0  0  0  0  0  0  0  0\n    9.3378    0.7356    1.2204 H   0  0  0  0  0  0  0  0  0  0  0  0\n    7.5936    2.0091    1.5526 H   0  0  0  0  0  0  0  0  0  0  0  0\n    5.9901    1.6283    1.0344 H   0  0  0  0  0  0  0  0  0  0  0  0\n  1 15  1  0  0  0  0\n  1 20  1  0  0  0  0\n  2 20  2  0  0  0  0\n  3 18  1  0  0  0  0\n  3 37  1  0  0  0  0\n  3 38  1  0  0  0  0\n  4 18  2  0  0  0  0\n  4 39  1  0  0  0  0\n  5 23  1  0  0  0  0\n  5 26  2  0  0  0  0\n  6 26  1  0  0  0  0\n  6 40  1  0  0  0  0\n  6 41  1  0  0  0  0\n  7 26  1  0  0  0  0\n  7 42  1  0  0  0  0\n  7 43  1  0  0  0  0\n  8  9  2  0  0  0  0\n  8 10  1  0  0  0  0\n  8 14  1  0  0  0  0\n  9 11  1  0  0  0  0\n  9 13  1  0  0  0  0\n 10 12  2  0  0  0  0\n 10 27  1  0  0  0  0\n 11 15  2  0  0  0  0\n 11 28  1  0  0  0  0\n 12 16  1  0  0  0  0\n 12 18  1  0  0  0  0\n 13 16  2  0  0  0  0\n 13 29  1  0  0  0  0\n 14 17  2  0  0  0  0\n 14 30  1  0  0  0  0\n 15 17  1  0  0  0  0\n 16 31  1  0  0  0  0\n 17 32  1  0  0  0  0\n 19 20  1  0  0  0  0\n 19 21  2  0  0  0  0\n 19 22  1  0  0  0  0\n 21 24  1  0  0  0  0\n 21 33  1  0  0  0  0\n 22 25  2  0  0  0  0\n 22 34  1  0  0  0  0\n 23 24  2  0  0  0  0\n 23 25  1  0  0  0  0\n 24 35  1  0  0  0  0\n 25 36  1  0  0  0  0\nM  END\n> <PUBCHEM_COMPOUND_CID>\n4413\n\n> <PUBCHEM_CONFORMER_RMSD>\n0.8\n\n> <PUBCHEM_CONFORMER_DIVERSEORDER>\n1\n45\n54\n22\n63\n52\n39\n8\n69\n74\n43\n12\n66\n73\n51\n35\n40\n6\n71\n47\n13\n61\n11\n70\n56\n50\n26\n42\n4\n67\n34\n75\n46\n10\n60\n65\n32\n5\n55\n64\n14\n3\n31\n25\n44\n17\n41\n68\n29\n2\n48\n16\n19\n57\n37\n49\n7\n59\n58\n30\n20\n9\n27\n21\n28\n72\n53\n38\n62\n33\n15\n23\n36\n18\n24\n\n> <PUBCHEM_MMFF94_PARTIAL_CHARGES>\n41\n1 -0.23\n10 -0.15\n11 -0.15\n12 0.09\n13 -0.15\n14 -0.15\n15 0.08\n16 -0.15\n17 -0.15\n18 0.41\n19 0.09\n2 -0.57\n20 0.63\n21 -0.15\n22 -0.15\n23 0.18\n24 -0.15\n25 -0.15\n26 0.55\n27 0.15\n28 0.15\n29 0.15\n3 -0.85\n30 0.15\n31 0.15\n32 0.15\n33 0.15\n34 0.15\n35 0.15\n36 0.15\n37 0.4\n38 0.4\n39 0.4\n4 -0.85\n40 0.4\n41 0.4\n42 0.4\n43 0.4\n5 -0.63\n6 -0.85\n7 -0.85\n\n> <PUBCHEM_EFFECTIVE_ROTOR_COUNT>\n5\n\n> <PUBCHEM_PHARMACOPHORE_FEATURES>\n10\n1 2 acceptor\n1 3 donor\n1 4 donor\n1 6 donor\n1 7 donor\n3 3 4 18 cation\n4 5 6 7 26 cation\n6 19 21 22 23 24 25 rings\n6 8 9 10 12 13 16 rings\n6 8 9 11 14 15 17 rings\n\n> <PUBCHEM_HEAVY_ATOM_COUNT>\n26\n\n> <PUBCHEM_ATOM_DEF_STEREO_COUNT>\n0\n\n> <PUBCHEM_ATOM_UDEF_STEREO_COUNT>\n0\n\n> <PUBCHEM_BOND_DEF_STEREO_COUNT>\n0\n\n> <PUBCHEM_BOND_UDEF_STEREO_COUNT>\n0\n\n> <PUBCHEM_ISOTOPIC_ATOM_COUNT>\n0\n\n> <PUBCHEM_COMPONENT_COUNT>\n1\n\n> <PUBCHEM_CACTVS_TAUTO_COUNT>\n3\n\n> <PUBCHEM_CONFORMER_ID>\n0000113D00000001\n\n> <PUBCHEM_MMFF94_ENERGY>\n98.9801\n\n> <PUBCHEM_FEATURE_SELFOVERLAP>\n50.871\n\n> <PUBCHEM_SHAPE_FINGERPRINT>\n10 15 17989485234792940006\n106641 1 17418091039842662790\n10670039 82 10881670317759532199\n11135926 11 17749101193440163771\n11315181 36 17846781810999114123\n11408170 108 16661197045984131698\n11524674 6 16988842787745703735\n11638347 137 18341613686259459978\n12166972 35 17749114408901345285\n12236239 1 17822015311340905159\n12516196 113 18202284697209052992\n12838862 33 18337657668733355967\n13533116 47 18113898217353612282\n13914758 101 16732980895063425245\n14150022 121 16558478496110502689\n14251764 18 17967253091581678718\n14251764 46 17822012007941426778\n15131766 46 15143243362876073830\n15183329 4 16370722630301788411\n15419008 47 17846493720977079616\n15716309 27 17561362872482794382\n15840311 113 18272089436127329404\n17093844 174 18412547609525590329\n18006028 8 18131632283864447353\n20511986 3 18114169818131774898\n21095086 128 11671785962048478620\n21267235 1 18337396033102031787\n22224240 67 16559029393773715350\n23402539 116 18407762538752291759\n23536379 177 17385445414933857615\n23559900 14 18338795732035313721\n249057 3 16950286230041114467\n29717793 49 18186528687262185422\n3004659 81 18186804690323732709\n335352 9 18410290312401763789\n34797466 226 17846502534914056204\n4073 2 16733277853449868890\n4325135 7 18259704493009605006\n5283156 175 18186520986227424994\n59682541 35 17489584592979349410\n59755656 520 15140965088682846339\n67856867 119 18188777261640028724\n9663363 56 18273212002827657857\n\n> <PUBCHEM_SHAPE_MULTIPOLES>\n498.42\n24.28\n1.4\n1.05\n9.25\n0.14\n-0.35\n-1.11\n3.52\n-1.54\n0.22\n1.51\n0.1\n0.07\n\n> <PUBCHEM_SHAPE_SELFOVERLAP>\n1097.619\n\n> <PUBCHEM_SHAPE_VOLUME>\n265.3\n\n> <PUBCHEM_COORDINATE_TYPE>\n2\n5\n10\n\n$$$$\n",
+                "binary": false
+              }
+            ],
+            "kwargs": {
+              "defaultRepresentation": true,
+              "ext": "sdf"
+            }
+          },
+          {
+            "target": "Widget",
+            "type": "call_method",
+            "methodName": "setSize",
+            "reconstruc_color_scheme": false,
+            "args": [
+              "300px",
+              "300px"
+            ],
+            "kwargs": {}
+          }
+        ],
+        "_ngl_original_stage_parameters": {
+          "impostor": true,
+          "quality": "medium",
+          "workerDefault": true,
+          "sampleLevel": 0,
+          "backgroundColor": "white",
+          "rotateSpeed": 2,
+          "zoomSpeed": 1.2,
+          "panSpeed": 1,
+          "clipNear": 0,
+          "clipFar": 100,
+          "clipDist": 10,
+          "fogNear": 50,
+          "fogFar": 100,
+          "cameraFov": 40,
+          "cameraEyeSep": 0.3,
+          "cameraType": "perspective",
+          "lightColor": 14540253,
+          "lightIntensity": 1,
+          "ambientColor": 14540253,
+          "ambientIntensity": 0.2,
+          "hoverTimeout": 0,
+          "tooltip": true,
+          "mousePreset": "default"
+        },
+        "_ngl_repr_dict": {
+          "0": {
+            "0": {
+              "type": "ball+stick",
+              "params": {
+                "lazy": false,
+                "visible": true,
+                "quality": "high",
+                "sphereDetail": 2,
+                "radialSegments": 20,
+                "openEnded": true,
+                "disableImpostor": false,
+                "aspectRatio": 1.5,
+                "lineOnly": false,
+                "cylinderOnly": false,
+                "multipleBond": "off",
+                "bondScale": 0.3,
+                "bondSpacing": 0.75,
+                "linewidth": 2,
+                "radiusType": "size",
+                "radiusData": {},
+                "radiusSize": 0.15,
+                "radiusScale": 2,
+                "assembly": "default",
+                "defaultAssembly": "",
+                "clipNear": 0,
+                "clipRadius": 0,
+                "clipCenter": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "flatShaded": false,
+                "opacity": 1,
+                "depthWrite": true,
+                "side": "double",
+                "wireframe": false,
+                "colorScheme": "element",
+                "colorScale": "",
+                "colorReverse": false,
+                "colorValue": 9474192,
+                "colorMode": "hcl",
+                "roughness": 0.4,
+                "metalness": 0,
+                "diffuse": 16777215,
+                "diffuseInterior": false,
+                "useInteriorColor": true,
+                "interiorColor": 2236962,
+                "interiorDarkening": 0,
+                "matrix": {
+                  "elements": [
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                "disablePicking": false,
+                "sele": ""
+              }
+            }
+          }
+        },
+        "_ngl_version": "2.0.0-dev.36",
+        "_ngl_view_id": [
+          "18A40881-68DD-48A0-9B0A-2B148D737D11"
+        ],
+        "_player_dict": {},
+        "_scene_position": {},
+        "_scene_rotation": {},
+        "_synced_model_ids": [],
+        "_synced_repr_model_ids": [],
+        "layout": "IPY_MODEL_bff586a9a35e4b179a3d382bfae4230b",
+        "n_components": 1,
+        "picked": {}
+      }
+    },
+    "de03657a5b2a45a286f78dd7011675d9": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "e6d126f386d64cb19bf77bebf0abcfa1": {
+      "model_name": "ImageModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_de03657a5b2a45a286f78dd7011675d9",
+        "width": "900.0"
+      }
+    },
+    "e1610e1ab1224529afd4c7584a9bc50a": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "fb4e5d2c0e24420fae68d815a80989d8": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "940106fa8bd649a0b7a23dbdf86d047e": {
+      "model_name": "PlayModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_e1610e1ab1224529afd4c7584a9bc50a",
+        "max": 0,
+        "style": "IPY_MODEL_fb4e5d2c0e24420fae68d815a80989d8"
+      }
+    },
+    "65a817fb5973449a9ff4e1f98526f715": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "ef24c81d443f4ef5bc4df4a88c304496": {
+      "model_name": "SliderStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "b2cdb6e174344b3b8f725d56a06addeb": {
+      "model_name": "IntSliderModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_65a817fb5973449a9ff4e1f98526f715",
+        "max": 0,
+        "style": "IPY_MODEL_ef24c81d443f4ef5bc4df4a88c304496"
+      }
+    },
+    "30aa0341439b464b8965bc43832206b5": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "cc0714f4b27340b3ad2aa84d8e694775": {
+      "model_name": "HBoxModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "children": [
+          "IPY_MODEL_940106fa8bd649a0b7a23dbdf86d047e",
+          "IPY_MODEL_b2cdb6e174344b3b8f725d56a06addeb"
+        ],
+        "layout": "IPY_MODEL_30aa0341439b464b8965bc43832206b5"
+      }
+    },
+    "d5549b0e026b4613ac3e26734719b53c": {
+      "model_name": "LinkModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "source": [
+          "IPY_MODEL_940106fa8bd649a0b7a23dbdf86d047e",
+          "value"
+        ],
+        "target": [
+          "IPY_MODEL_b2cdb6e174344b3b8f725d56a06addeb",
+          "value"
+        ]
+      }
+    },
+    "4e0c1ca818674fcaa81d4bdd88d96c6e": {
+      "model_name": "LinkModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "source": [
+          "IPY_MODEL_940106fa8bd649a0b7a23dbdf86d047e",
+          "value"
+        ],
+        "target": [
+          "IPY_MODEL_abcc87bf4d324cb8ac2d2859f76d6bda",
+          "frame"
+        ]
+      }
+    },
+    "5d84fdc3158f48f2ad3d80726d589e3a": {
+      "model_name": "LinkModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "source": [
+          "IPY_MODEL_940106fa8bd649a0b7a23dbdf86d047e",
+          "max"
+        ],
+        "target": [
+          "IPY_MODEL_abcc87bf4d324cb8ac2d2859f76d6bda",
+          "max_frame"
+        ]
+      }
+    },
+    "8a588438abc74929972b5cb0c2b27729": {
+      "model_name": "LinkModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "source": [
+          "IPY_MODEL_b2cdb6e174344b3b8f725d56a06addeb",
+          "max"
+        ],
+        "target": [
+          "IPY_MODEL_abcc87bf4d324cb8ac2d2859f76d6bda",
+          "max_frame"
+        ]
+      }
+    },
+    "62ca8f1916634aae969bbbf65536231c": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {
+        "width": "34px"
+      }
+    },
+    "1a50c24d079f408bbd577b16f8670ae3": {
+      "model_name": "ButtonStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "dc1c2cbf549c4c81b93ce0f07acf353a": {
+      "model_name": "ButtonModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "icon": "compress",
+        "layout": "IPY_MODEL_62ca8f1916634aae969bbbf65536231c",
+        "style": "IPY_MODEL_1a50c24d079f408bbd577b16f8670ae3"
+      }
+    },
+    "7678ed1f6fa04eb28cc28cad2defa8a0": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "7ef5cf5514a6452d9d84e2e7287abac6": {
+      "model_name": "HBoxModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "children": [
+          "IPY_MODEL_6ad976484b3e45309574fd641142d059",
+          "IPY_MODEL_ac46912bfb804c3ab4cf00e41f03bba2",
+          "IPY_MODEL_17e0d608e90b41438e0f161a059b5bcc"
+        ],
+        "layout": "IPY_MODEL_7678ed1f6fa04eb28cc28cad2defa8a0"
+      }
+    },
+    "812d071e28e64cf885808cace324b686": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "d604b7620a1f43bd98f001bffab10f2d": {
+      "model_name": "HBoxModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "children": [
+          "IPY_MODEL_7d6822f89c064a2097b3d6822e282777",
+          "IPY_MODEL_8613deee125e4452b808a3163ace54b0",
+          "IPY_MODEL_a8f7ee17ef194ad0861854ada20863f4"
+        ],
+        "layout": "IPY_MODEL_812d071e28e64cf885808cace324b686"
+      }
+    },
+    "28032948649f4bbcbf5a68bfc475d27f": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "60433a850adf4f218b6b905f7481711c": {
+      "model_name": "HBoxModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "children": [
+          "IPY_MODEL_13a8ae4d4b5541b98c9dbd52cb8c37ff",
+          "IPY_MODEL_439065583c0e490e8f0e6147e9cddc5e",
+          "IPY_MODEL_abcc87bf4d324cb8ac2d2859f76d6bda"
+        ],
+        "layout": "IPY_MODEL_28032948649f4bbcbf5a68bfc475d27f"
+      }
+    }
+  }
+}
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "7ef5cf5514a6452d9d84e2e7287abac6"}
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "d604b7620a1f43bd98f001bffab10f2d"}
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "60433a850adf4f218b6b905f7481711c"}
+</script>
+
+</body>
+</html>
